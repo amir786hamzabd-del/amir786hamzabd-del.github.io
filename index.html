@@ -2,3048 +2,4072 @@
 <html lang="en">
 <head>
 <meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="viewport" content="width=device-width,initial-scale=1.0">
 
-<title>Trust Shop BD - Online Clothing Store</title>
+<title>Trust Shop BD | Online Fashion Store</title>
 
-<meta name="description" content="Trust Shop BD - Buy quality men's and women's clothing online in Bangladesh.">
+<meta name="description" content="Trust Shop BD - Quality fashion products at affordable prices in Bangladesh.">
+<meta name="theme-color" content="#111827">
 
-<!-- Google AdSense -->
+<!-- ==================== ADSENSE ==================== -->
 <script async
 src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-7139898909046849"
 crossorigin="anonymous"></script>
 
 <style>
 *{
-  box-sizing:border-box;
-  margin:0;
-  padding:0;
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+html{
+    scroll-behavior:smooth;
 }
 
 body{
-  font-family:Arial,Helvetica,sans-serif;
-  background:#f5f6fa;
-  color:#222;
+    font-family:Arial,Helvetica,sans-serif;
+    background:#f5f7fb;
+    color:#111827;
 }
 
-button,input,textarea,select{
-  font:inherit;
+button,
+input,
+textarea,
+select{
+    font-family:inherit;
 }
 
 button{
-  cursor:pointer;
+    cursor:pointer;
 }
 
-a{
-  text-decoration:none;
-  color:inherit;
+img{
+    max-width:100%;
 }
 
-/* HEADER */
-.header{
-  background:#111827;
-  color:white;
-  position:sticky;
-  top:0;
-  z-index:1000;
-  box-shadow:0 2px 10px rgba(0,0,0,.15);
+.hidden{
+    display:none!important;
 }
 
-.nav{
-  max-width:1200px;
-  margin:auto;
-  min-height:65px;
-  padding:10px 16px;
-  display:flex;
-  align-items:center;
-  justify-content:space-between;
-  gap:15px;
+/* ================= HEADER ================= */
+
+header{
+    position:sticky;
+    top:0;
+    z-index:1000;
+    background:#111827;
+    color:#fff;
+    box-shadow:0 3px 18px rgba(0,0,0,.15);
+}
+
+.navbar{
+    max-width:1280px;
+    min-height:68px;
+    margin:auto;
+    padding:10px 18px;
+    display:flex;
+    align-items:center;
+    justify-content:space-between;
+    gap:15px;
 }
 
 .logo{
-  font-size:22px;
-  font-weight:800;
-  color:#fff;
-  white-space:nowrap;
+    font-size:24px;
+    font-weight:800;
+    white-space:nowrap;
 }
 
 .logo span{
-  color:#22c55e;
+    color:#22c55e;
 }
 
 .nav-links{
-  display:flex;
-  align-items:center;
-  gap:8px;
+    display:flex;
+    align-items:center;
+    gap:5px;
 }
 
 .nav-links button{
-  border:0;
-  background:transparent;
-  color:white;
-  padding:9px 12px;
-  border-radius:7px;
+    background:transparent;
+    color:white;
+    border:0;
+    padding:10px 13px;
+    border-radius:8px;
+    font-size:14px;
 }
 
 .nav-links button:hover{
-  background:#374151;
+    background:#374151;
 }
 
 .cart-btn{
-  background:#22c55e!important;
-  font-weight:bold;
+    position:relative;
 }
 
 .cart-count{
-  background:#ef4444;
-  padding:2px 7px;
-  border-radius:20px;
-  margin-left:4px;
+    position:absolute;
+    top:0;
+    right:0;
+    background:#ef4444;
+    color:white;
+    width:19px;
+    height:19px;
+    border-radius:50%;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    font-size:10px;
+    font-weight:bold;
 }
 
-/* HERO */
+/* ================= HERO ================= */
+
 .hero{
-  background:linear-gradient(135deg,#111827,#1f2937);
-  color:white;
-  padding:55px 16px;
-}
-
-.hero-inner{
-  max-width:1200px;
-  margin:auto;
-  display:grid;
-  grid-template-columns:1.4fr 1fr;
-  align-items:center;
-  gap:30px;
+    max-width:1280px;
+    margin:18px auto;
+    padding:65px 25px;
+    border-radius:20px;
+    background:linear-gradient(135deg,#111827,#263244);
+    color:white;
+    text-align:center;
 }
 
 .hero h1{
-  font-size:48px;
-  margin-bottom:15px;
+    font-size:44px;
+    margin-bottom:14px;
 }
 
 .hero h1 span{
-  color:#22c55e;
+    color:#22c55e;
 }
 
 .hero p{
-  color:#d1d5db;
-  font-size:18px;
-  line-height:1.6;
-  margin-bottom:25px;
+    max-width:650px;
+    margin:0 auto 25px;
+    color:#d1d5db;
+    line-height:1.6;
 }
 
 .hero-btn{
-  display:inline-block;
-  padding:13px 22px;
-  background:#22c55e;
-  color:white;
-  border-radius:8px;
-  font-weight:bold;
-  border:0;
+    background:#22c55e;
+    color:white;
+    border:0;
+    border-radius:9px;
+    padding:13px 27px;
+    font-size:16px;
+    font-weight:bold;
 }
 
-.hero-card{
-  background:rgba(255,255,255,.08);
-  border:1px solid rgba(255,255,255,.15);
-  border-radius:18px;
-  padding:35px;
-  text-align:center;
-}
+/* ================= MAIN ================= */
 
-.hero-card .big{
-  font-size:70px;
-}
-
-/* AD */
-.ad-box{
-  max-width:1200px;
-  margin:20px auto;
-  padding:10px 16px;
-  text-align:center;
-  min-height:90px;
-}
-
-/* MAIN */
 .container{
-  max-width:1200px;
-  margin:auto;
-  padding:25px 16px;
+    max-width:1280px;
+    margin:auto;
+    padding:0 18px 50px;
 }
 
 .section-title{
-  font-size:28px;
-  margin-bottom:18px;
+    text-align:center;
+    margin:35px 0 20px;
 }
 
-/* FILTER */
-.toolbar{
-  background:white;
-  border-radius:12px;
-  padding:15px;
-  box-shadow:0 2px 8px rgba(0,0,0,.06);
-  margin-bottom:25px;
+.section-title h2{
+    font-size:30px;
 }
 
-.search{
-  width:100%;
-  padding:13px;
-  border:1px solid #ddd;
-  border-radius:8px;
-  outline:none;
-  margin-bottom:13px;
+.section-title p{
+    color:#6b7280;
+    margin-top:7px;
 }
 
-.search:focus{
-  border-color:#22c55e;
+/* ================= SEARCH ================= */
+
+.search-box{
+    background:white;
+    padding:15px;
+    border-radius:12px;
+    box-shadow:0 3px 15px rgba(0,0,0,.05);
+    margin-bottom:15px;
 }
+
+.search-box input{
+    width:100%;
+    padding:13px;
+    border:1px solid #d1d5db;
+    border-radius:8px;
+    outline:none;
+    font-size:15px;
+}
+
+/* ================= CATEGORY ================= */
 
 .categories{
-  display:flex;
-  gap:8px;
-  flex-wrap:wrap;
+    display:flex;
+    justify-content:center;
+    flex-wrap:wrap;
+    gap:8px;
+    margin-bottom:25px;
 }
 
 .category-btn{
-  padding:9px 13px;
-  border:1px solid #ddd;
-  background:white;
-  border-radius:20px;
+    border:1px solid #d1d5db;
+    background:#fff;
+    color:#111827;
+    padding:9px 15px;
+    border-radius:30px;
 }
 
-.category-btn.active,
-.category-btn:hover{
-  background:#22c55e;
-  border-color:#22c55e;
-  color:white;
+.category-btn:hover,
+.category-btn.active{
+    background:#111827;
+    color:#fff;
+    border-color:#111827;
 }
 
-/* PRODUCTS */
+/* ================= PRODUCTS ================= */
+
 .products-grid{
-  display:grid;
-  grid-template-columns:repeat(4,1fr);
-  gap:18px;
+    display:grid;
+    grid-template-columns:repeat(4,1fr);
+    gap:18px;
 }
 
 .product-card{
-  background:white;
-  border-radius:12px;
-  overflow:hidden;
-  box-shadow:0 2px 9px rgba(0,0,0,.08);
-  transition:.2s;
+    background:white;
+    overflow:hidden;
+    border-radius:14px;
+    box-shadow:0 3px 15px rgba(0,0,0,.06);
+    transition:.2s;
 }
 
 .product-card:hover{
-  transform:translateY(-3px);
-  box-shadow:0 7px 20px rgba(0,0,0,.12);
+    transform:translateY(-3px);
+    box-shadow:0 8px 25px rgba(0,0,0,.11);
 }
 
-.product-img{
-  width:100%;
-  height:250px;
-  object-fit:cover;
-  background:#eee;
-  cursor:pointer;
+.product-image{
+    height:260px;
+    background:#f3f4f6;
+    overflow:hidden;
+}
+
+.product-image img{
+    width:100%;
+    height:100%;
+    object-fit:cover;
+}
+
+.no-image{
+    width:100%;
+    height:100%;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    color:#9ca3af;
 }
 
 .product-info{
-  padding:14px;
-}
-
-.product-name{
-  font-size:17px;
-  font-weight:bold;
-  margin-bottom:8px;
+    padding:14px;
 }
 
 .product-category{
-  color:#777;
-  font-size:13px;
-  margin-bottom:7px;
+    font-size:12px;
+    color:#6b7280;
+    margin-bottom:6px;
 }
 
-.price{
-  color:#16a34a;
-  font-size:20px;
-  font-weight:bold;
-  margin-bottom:5px;
+.product-name{
+    font-size:17px;
+    font-weight:bold;
+    margin-bottom:7px;
 }
 
-.stock{
-  font-size:13px;
-  color:#666;
-  margin-bottom:12px;
+.product-price{
+    color:#16a34a;
+    font-size:19px;
+    font-weight:bold;
+    margin-bottom:6px;
+}
+
+.product-stock{
+    color:#6b7280;
+    font-size:12px;
+    margin-bottom:10px;
 }
 
 .product-actions{
-  display:flex;
-  gap:7px;
+    display:grid;
+    grid-template-columns:1fr 1fr;
+    gap:7px;
 }
 
+/* ================= BUTTONS ================= */
+
 .btn{
-  border:0;
-  padding:10px 12px;
-  border-radius:7px;
-  font-weight:bold;
+    border:0;
+    border-radius:8px;
+    padding:10px 13px;
+    font-weight:bold;
 }
 
 .btn-primary{
-  background:#22c55e;
-  color:white;
+    background:#111827;
+    color:#fff;
 }
 
-.btn-dark{
-  background:#111827;
-  color:white;
+.btn-success{
+    background:#16a34a;
+    color:#fff;
 }
 
 .btn-danger{
-  background:#ef4444;
-  color:white;
+    background:#dc2626;
+    color:#fff;
+}
+
+.btn-warning{
+    background:#f59e0b;
+    color:#fff;
 }
 
 .btn-light{
-  background:#e5e7eb;
-  color:#111;
+    background:#e5e7eb;
+    color:#111827;
 }
 
 .btn:disabled{
-  opacity:.5;
-  cursor:not-allowed;
+    opacity:.5;
+    cursor:not-allowed;
 }
 
-/* EMPTY */
-.empty{
-  background:white;
-  padding:50px 20px;
-  text-align:center;
-  border-radius:12px;
-  color:#777;
+/* ================= ADS ================= */
+
+.ad-box{
+    margin:20px 0;
+    min-height:90px;
+    text-align:center;
+    overflow:hidden;
 }
 
-/* FEATURES */
-.features{
-  max-width:1200px;
-  margin:20px auto 40px;
-  padding:0 16px;
-  display:grid;
-  grid-template-columns:repeat(3,1fr);
-  gap:15px;
-}
+/* ================= MODAL ================= */
 
-.feature{
-  background:white;
-  padding:25px;
-  text-align:center;
-  border-radius:12px;
-}
-
-.feature-icon{
-  font-size:35px;
-  margin-bottom:10px;
-}
-
-/* FOOTER */
-.footer{
-  background:#111827;
-  color:white;
-  padding:35px 16px;
-  margin-top:40px;
-}
-
-.footer-inner{
-  max-width:1200px;
-  margin:auto;
-  display:grid;
-  grid-template-columns:2fr 1fr 1fr;
-  gap:30px;
-}
-
-.footer h3{
-  margin-bottom:12px;
-}
-
-.footer p{
-  color:#d1d5db;
-  line-height:1.7;
-}
-
-.footer a{
-  color:#86efac;
-}
-
-.copyright{
-  max-width:1200px;
-  margin:25px auto 0;
-  padding-top:20px;
-  border-top:1px solid #374151;
-  color:#9ca3af;
-}
-
-/* WHATSAPP */
-.whatsapp{
-  position:fixed;
-  right:18px;
-  bottom:18px;
-  width:58px;
-  height:58px;
-  border-radius:50%;
-  background:#25d366;
-  color:white;
-  display:flex;
-  align-items:center;
-  justify-content:center;
-  font-size:29px;
-  z-index:1500;
-  box-shadow:0 4px 15px rgba(0,0,0,.25);
-}
-
-/* MODAL */
 .modal{
-  position:fixed;
-  inset:0;
-  background:rgba(0,0,0,.65);
-  display:none;
-  align-items:center;
-  justify-content:center;
-  z-index:3000;
-  padding:15px;
+    display:none;
+    position:fixed;
+    inset:0;
+    z-index:5000;
+    background:rgba(0,0,0,.65);
+    padding:15px;
+    overflow:auto;
 }
 
 .modal.show{
-  display:flex;
+    display:flex;
+    align-items:center;
+    justify-content:center;
 }
 
 .modal-content{
-  background:white;
-  width:100%;
-  max-width:600px;
-  max-height:92vh;
-  overflow-y:auto;
-  border-radius:14px;
-  position:relative;
-  padding:22px;
+    width:100%;
+    max-width:620px;
+    max-height:95vh;
+    overflow:auto;
+    position:relative;
+    background:#fff;
+    border-radius:16px;
+    padding:22px;
 }
 
 .modal-large{
-  max-width:900px;
+    max-width:1000px;
 }
 
 .close{
-  position:absolute;
-  right:15px;
-  top:12px;
-  border:0;
-  background:#eee;
-  width:35px;
-  height:35px;
-  border-radius:50%;
-  font-size:20px;
+    position:absolute;
+    top:12px;
+    right:12px;
+    border:0;
+    width:36px;
+    height:36px;
+    border-radius:50%;
+    background:#f3f4f6;
+    font-size:23px;
+    z-index:5;
 }
 
-/* DETAIL */
-.detail{
-  display:grid;
-  grid-template-columns:1fr 1fr;
-  gap:25px;
+/* ================= DETAIL ================= */
+
+.detail-grid{
+    display:grid;
+    grid-template-columns:1fr 1fr;
+    gap:25px;
 }
 
-.detail-main-img{
-  width:100%;
-  height:450px;
-  object-fit:contain;
-  background:#f3f4f6;
-  border-radius:10px;
+.detail-main-image{
+    width:100%;
+    height:430px;
+    background:#f3f4f6;
+    border-radius:12px;
+    overflow:hidden;
 }
 
-.thumbs{
-  display:flex;
-  gap:8px;
-  overflow:auto;
-  margin-top:10px;
+.detail-main-image img{
+    width:100%;
+    height:100%;
+    object-fit:cover;
 }
 
-.thumb{
-  width:65px;
-  height:65px;
-  object-fit:cover;
-  border-radius:7px;
-  border:2px solid transparent;
-  cursor:pointer;
+.detail-thumbs{
+    display:flex;
+    gap:8px;
+    margin-top:10px;
+    overflow:auto;
 }
 
-.thumb.active{
-  border-color:#22c55e;
+.detail-thumbs img{
+    width:70px;
+    height:70px;
+    object-fit:cover;
+    border-radius:8px;
+    cursor:pointer;
+    border:2px solid transparent;
 }
 
-.detail h2{
-  font-size:28px;
-  margin-bottom:12px;
+.detail-thumbs img:hover{
+    border-color:#22c55e;
 }
 
-.detail-desc{
-  color:#666;
-  line-height:1.7;
-  margin:15px 0;
+.detail-title{
+    font-size:29px;
+    margin:10px 0;
 }
 
-.qty{
-  display:flex;
-  align-items:center;
-  gap:12px;
-  margin:15px 0;
+.detail-price{
+    font-size:26px;
+    color:#16a34a;
+    font-weight:bold;
+    margin-bottom:15px;
 }
 
-.qty button{
-  width:36px;
-  height:36px;
-  border:0;
-  border-radius:7px;
-  background:#e5e7eb;
+.detail-description{
+    white-space:pre-wrap;
+    color:#4b5563;
+    line-height:1.7;
+    margin:15px 0 20px;
 }
 
-/* CART */
-.cart-item{
-  display:grid;
-  grid-template-columns:75px 1fr auto;
-  gap:12px;
-  align-items:center;
-  padding:12px 0;
-  border-bottom:1px solid #eee;
-}
+/* ================= FORM ================= */
 
-.cart-item img{
-  width:75px;
-  height:75px;
-  object-fit:cover;
-  border-radius:8px;
-}
-
-.cart-name{
-  font-weight:bold;
-}
-
-.cart-controls{
-  display:flex;
-  gap:5px;
-  align-items:center;
-  margin-top:7px;
-}
-
-.cart-controls button{
-  width:28px;
-  height:28px;
-  border:0;
-  background:#e5e7eb;
-  border-radius:5px;
-}
-
-.cart-total{
-  font-size:22px;
-  font-weight:bold;
-  text-align:right;
-  padding:18px 0;
-}
-
-/* FORM */
 .form-group{
-  margin-bottom:14px;
+    margin-bottom:14px;
 }
 
 .form-group label{
-  display:block;
-  font-weight:bold;
-  margin-bottom:6px;
+    display:block;
+    font-weight:bold;
+    margin-bottom:6px;
 }
 
 .form-group input,
 .form-group textarea,
 .form-group select{
-  width:100%;
-  border:1px solid #ddd;
-  border-radius:8px;
-  padding:11px;
-  outline:none;
+    width:100%;
+    padding:12px;
+    border:1px solid #d1d5db;
+    border-radius:8px;
+    outline:none;
 }
 
 .form-group textarea{
-  min-height:90px;
-  resize:vertical;
+    min-height:100px;
+    resize:vertical;
 }
 
 .form-row{
-  display:grid;
-  grid-template-columns:1fr 1fr;
-  gap:12px;
+    display:grid;
+    grid-template-columns:1fr 1fr;
+    gap:12px;
 }
 
-/* ADMIN */
-.admin-head{
-  display:flex;
-  justify-content:space-between;
-  align-items:center;
-  gap:10px;
-  margin-bottom:20px;
+.form-actions{
+    display:flex;
+    gap:8px;
 }
 
-.admin-form{
-  background:#f8fafc;
-  padding:18px;
-  border-radius:10px;
-  margin-bottom:20px;
+/* ================= CART ================= */
+
+.cart-item{
+    display:flex;
+    align-items:center;
+    gap:12px;
+    padding:12px 0;
+    border-bottom:1px solid #eee;
 }
 
-.file-area{
-  border:2px dashed #bbb;
-  border-radius:10px;
-  padding:25px;
-  text-align:center;
-  background:white;
-  cursor:pointer;
+.cart-item-image{
+    width:70px;
+    height:70px;
+    flex-shrink:0;
+    border-radius:8px;
+    overflow:hidden;
+    background:#eee;
 }
 
-.file-area.drag{
-  border-color:#22c55e;
-  background:#f0fdf4;
+.cart-item-image img{
+    width:100%;
+    height:100%;
+    object-fit:cover;
 }
 
-.file-area input{
-  display:none;
+.cart-item-info{
+    flex:1;
 }
 
-.preview-grid{
-  display:grid;
-  grid-template-columns:repeat(6,1fr);
-  gap:8px;
-  margin-top:12px;
+.cart-item-name{
+    font-weight:bold;
+    margin-bottom:4px;
 }
 
-.preview{
-  position:relative;
+.cart-item-price{
+    color:#16a34a;
+    font-weight:bold;
 }
 
-.preview img{
-  width:100%;
-  height:90px;
-  object-fit:cover;
-  border-radius:7px;
+.qty-controls{
+    display:flex;
+    align-items:center;
+    gap:7px;
+    margin-top:6px;
 }
 
-.preview button{
-  position:absolute;
-  right:3px;
-  top:3px;
-  border:0;
-  background:#ef4444;
-  color:white;
-  width:23px;
-  height:23px;
-  border-radius:50%;
+.qty-controls button{
+    width:28px;
+    height:28px;
+    border:0;
+    border-radius:5px;
+    background:#e5e7eb;
 }
 
-.progress{
-  height:8px;
-  background:#ddd;
-  border-radius:10px;
-  overflow:hidden;
-  margin:12px 0;
-  display:none;
+.cart-total{
+    display:flex;
+    justify-content:space-between;
+    font-size:20px;
+    font-weight:bold;
+    padding:17px 0;
 }
 
-.progress-bar{
-  width:0%;
-  height:100%;
-  background:#22c55e;
+/* ================= ADMIN ================= */
+
+.admin-panel{
+    display:none;
+    max-width:1280px;
+    margin:20px auto 50px;
+    padding:0 18px;
+}
+
+.admin-panel.show{
+    display:block;
+}
+
+.admin-header{
+    background:#111827;
+    color:white;
+    padding:20px;
+    border-radius:12px;
+    display:flex;
+    align-items:center;
+    justify-content:space-between;
+    gap:10px;
+    margin-bottom:20px;
+}
+
+.admin-box{
+    background:#fff;
+    border-radius:12px;
+    padding:20px;
+    margin-bottom:20px;
+    box-shadow:0 3px 15px rgba(0,0,0,.05);
+}
+
+.stats{
+    display:grid;
+    grid-template-columns:repeat(3,1fr);
+    gap:15px;
+    margin-bottom:20px;
+}
+
+.stat{
+    background:white;
+    padding:20px;
+    border-radius:12px;
+    text-align:center;
+    box-shadow:0 3px 15px rgba(0,0,0,.05);
+}
+
+.stat strong{
+    display:block;
+    font-size:29px;
+    margin-top:5px;
+}
+
+.admin-products{
+    display:grid;
+    grid-template-columns:repeat(3,1fr);
+    gap:15px;
 }
 
 .admin-product{
-  background:white;
-  padding:12px;
-  border-radius:9px;
-  display:flex;
-  align-items:center;
-  gap:12px;
-  margin-bottom:10px;
-  border:1px solid #eee;
+    border:1px solid #e5e7eb;
+    border-radius:10px;
+    padding:12px;
 }
 
 .admin-product img{
-  width:65px;
-  height:65px;
-  object-fit:cover;
-  border-radius:7px;
-}
-
-.admin-product-info{
-  flex:1;
-}
-
-.message{
-  padding:12px;
-  border-radius:7px;
-  margin-bottom:12px;
-  display:none;
-}
-
-.message.success{
-  display:block;
-  background:#dcfce7;
-  color:#166534;
-}
-
-.message.error{
-  display:block;
-  background:#fee2e2;
-  color:#991b1b;
-}
-
-/* LOADING */
-.loading{
-  text-align:center;
-  padding:40px;
-  color:#777;
-}
-
-/* MOBILE */
-@media(max-width:900px){
-  .products-grid{
-    grid-template-columns:repeat(3,1fr);
-  }
-
-  .hero-inner{
-    grid-template-columns:1fr;
-  }
-
-  .footer-inner{
-    grid-template-columns:1fr 1fr;
-  }
-}
-
-@media(max-width:650px){
-  .nav{
-    flex-wrap:wrap;
-  }
-
-  .nav-links{
     width:100%;
-    overflow:auto;
-  }
+    height:180px;
+    object-fit:cover;
+    border-radius:8px;
+    margin-bottom:10px;
+}
 
-  .nav-links button{
-    white-space:nowrap;
-  }
-
-  .hero{
-    padding:35px 16px;
-  }
-
-  .hero h1{
-    font-size:35px;
-  }
-
-  .products-grid{
-    grid-template-columns:repeat(2,1fr);
-    gap:10px;
-  }
-
-  .product-img{
-    height:190px;
-  }
-
-  .features{
-    grid-template-columns:1fr;
-  }
-
-  .footer-inner{
-    grid-template-columns:1fr;
-  }
-
-  .detail{
-    grid-template-columns:1fr;
-  }
-
-  .detail-main-img{
-    height:330px;
-  }
-
-  .form-row{
-    grid-template-columns:1fr;
-  }
-
-  .preview-grid{
-    grid-template-columns:repeat(3,1fr);
-  }
-
-  .admin-product{
-    align-items:flex-start;
-  }
-
-  .admin-product-actions{
+.admin-buttons{
     display:flex;
-    flex-direction:column;
-  }
+    gap:7px;
+    margin-top:12px;
+}
+
+.image-preview{
+    display:grid;
+    grid-template-columns:repeat(3,1fr);
+    gap:8px;
+    margin-top:10px;
+}
+
+.image-preview-item{
+    height:100px;
+    border-radius:8px;
+    overflow:hidden;
+    background:#f3f4f6;
+}
+
+.image-preview-item img{
+    width:100%;
+    height:100%;
+    object-fit:cover;
+}
+
+/* ================= EMPTY / LOADING ================= */
+
+.loading,
+.empty{
+    background:white;
+    padding:50px 20px;
+    border-radius:12px;
+    text-align:center;
+    color:#6b7280;
+    grid-column:1/-1;
+}
+
+/* ================= TOAST ================= */
+
+.toast{
+    position:fixed;
+    z-index:99999;
+    right:20px;
+    bottom:20px;
+    background:#111827;
+    color:white;
+    padding:13px 18px;
+    border-radius:9px;
+    display:none;
+    max-width:330px;
+    box-shadow:0 5px 25px rgba(0,0,0,.2);
+}
+
+.toast.show{
+    display:block;
+}
+
+/* ================= FOOTER ================= */
+
+footer{
+    background:#111827;
+    color:white;
+    padding:40px 18px;
+}
+
+.footer-inner{
+    max-width:1280px;
+    margin:auto;
+    text-align:center;
+}
+
+.footer-inner p{
+    color:#9ca3af;
+    margin:8px 0;
+}
+
+.whatsapp{
+    display:inline-block;
+    background:#25D366;
+    color:white;
+    padding:12px 20px;
+    border-radius:8px;
+    margin-top:12px;
+    font-weight:bold;
+}
+
+/* ================= MOBILE ================= */
+
+@media(max-width:1050px){
+
+    .products-grid{
+        grid-template-columns:repeat(3,1fr);
+    }
+
+}
+
+@media(max-width:750px){
+
+    .navbar{
+        flex-wrap:wrap;
+    }
+
+    .nav-links{
+        width:100%;
+        justify-content:center;
+        overflow-x:auto;
+    }
+
+    .hero{
+        margin:10px;
+        padding:45px 18px;
+    }
+
+    .hero h1{
+        font-size:31px;
+    }
+
+    .products-grid{
+        grid-template-columns:repeat(2,1fr);
+        gap:10px;
+    }
+
+    .product-image{
+        height:200px;
+    }
+
+    .product-info{
+        padding:10px;
+    }
+
+    .product-name{
+        font-size:15px;
+    }
+
+    .product-actions{
+        grid-template-columns:1fr;
+    }
+
+    .detail-grid{
+        grid-template-columns:1fr;
+    }
+
+    .detail-main-image{
+        height:320px;
+    }
+
+    .form-row{
+        grid-template-columns:1fr;
+    }
+
+    .admin-products{
+        grid-template-columns:1fr;
+    }
+
+    .stats{
+        grid-template-columns:1fr;
+    }
+
+}
+
+@media(max-width:420px){
+
+    .logo{
+        font-size:20px;
+    }
+
+    .nav-links button{
+        font-size:12px;
+        padding:8px;
+    }
+
+    .products-grid{
+        grid-template-columns:1fr 1fr;
+    }
+
+    .product-image{
+        height:165px;
+    }
+
 }
 </style>
 </head>
 
 <body>
 
-<header class="header">
-  <div class="nav">
+<!-- ================= HEADER ================= -->
+
+<header>
+
+<div class="navbar">
 
     <div class="logo">
-      Trust <span>Shop BD</span>
+        Trust <span>Shop BD</span>
     </div>
 
     <div class="nav-links">
-      <button onclick="scrollHome()">Home</button>
-      <button onclick="scrollProducts()">Products</button>
-      <button class="cart-btn" onclick="openCart()">
-        🛒 Cart <span id="cartCount" class="cart-count">0</span>
-      </button>
-      <button onclick="openAdminLogin()">🔐 Admin</button>
+
+        <button onclick="goHome()">
+            🏠 Home
+        </button>
+
+        <button onclick="scrollProducts()">
+            🛍 Products
+        </button>
+
+        <button class="cart-btn" onclick="openCart()">
+            🛒 Cart
+            <span id="cartCount" class="cart-count">0</span>
+        </button>
+
+        <button onclick="openLogin()">
+            🔐 Admin
+        </button>
+
     </div>
 
-  </div>
-</header>
-
-<section class="hero" id="home">
-  <div class="hero-inner">
-
-    <div>
-      <h1>Welcome to <span>Trust Shop BD</span></h1>
-      <p>
-        Quality clothing at affordable prices.
-        Shop men's and women's fashion from anywhere in Bangladesh.
-      </p>
-
-      <button class="hero-btn" onclick="scrollProducts()">
-        🛍️ Shop Now
-      </button>
-    </div>
-
-    <div class="hero-card">
-      <div class="big">👕</div>
-      <h2>Fashion for Everyone</h2>
-      <p>Men • Women • T-Shirt • Shirt • Pants • Hoodie</p>
-    </div>
-
-  </div>
-</section>
-
-<div class="ad-box">
-  <ins class="adsbygoogle"
-       style="display:block"
-       data-ad-client="ca-pub-7139898909046849"
-       data-ad-slot="0000000000"
-       data-ad-format="auto"
-       data-full-width-responsive="true"></ins>
 </div>
 
-<main class="container" id="products">
+</header>
 
-  <h2 class="section-title">Our Products</h2>
 
-  <div class="toolbar">
+<!-- ================= HERO ================= -->
 
-    <input
-      type="search"
-      id="searchInput"
-      class="search"
-      placeholder="🔎 Search products..."
-    >
+<section class="hero">
 
-    <div class="categories">
-      <button class="category-btn active" onclick="filterCategory('All',this)">All</button>
-      <button class="category-btn" onclick="filterCategory('Men',this)">Men</button>
-      <button class="category-btn" onclick="filterCategory('Women',this)">Women</button>
-      <button class="category-btn" onclick="filterCategory('T-Shirt',this)">T-Shirt</button>
-      <button class="category-btn" onclick="filterCategory('Shirt',this)">Shirt</button>
-      <button class="category-btn" onclick="filterCategory('Pants',this)">Pants</button>
-      <button class="category-btn" onclick="filterCategory('Hoodie',this)">Hoodie</button>
-      <button class="category-btn" onclick="filterCategory('Accessories',this)">Accessories</button>
+    <h1>
+        Welcome to <span>Trust Shop BD</span>
+    </h1>
+
+    <p>
+        Shop quality fashion products at affordable prices.
+        Order easily and get delivery anywhere in Bangladesh.
+    </p>
+
+    <button class="hero-btn" onclick="scrollProducts()">
+        🛍 Shop Now
+    </button>
+
+</section>
+
+
+<!-- ================= MAIN ================= -->
+
+<main class="container" id="productsSection">
+
+    <div class="section-title">
+
+        <h2>Our Products</h2>
+
+        <p>
+            Find your favorite products
+        </p>
+
     </div>
 
-  </div>
 
-  <div id="productsGrid" class="products-grid">
-    <div class="loading">Loading products...</div>
-  </div>
+    <!-- SEARCH -->
+
+    <div class="search-box">
+
+        <input
+            id="searchInput"
+            type="search"
+            placeholder="🔍 Search product..."
+            oninput="renderProducts()">
+
+    </div>
+
+
+    <!-- CATEGORIES -->
+
+    <div class="categories">
+
+        <button
+            class="category-btn active"
+            onclick="selectCategory('All',this)">
+            All
+        </button>
+
+        <button
+            class="category-btn"
+            onclick="selectCategory('Men',this)">
+            Men
+        </button>
+
+        <button
+            class="category-btn"
+            onclick="selectCategory('Women',this)">
+            Women
+        </button>
+
+        <button
+            class="category-btn"
+            onclick="selectCategory('T-Shirt',this)">
+            T-Shirt
+        </button>
+
+        <button
+            class="category-btn"
+            onclick="selectCategory('Shirt',this)">
+            Shirt
+        </button>
+
+        <button
+            class="category-btn"
+            onclick="selectCategory('Pants',this)">
+            Pants
+        </button>
+
+        <button
+            class="category-btn"
+            onclick="selectCategory('Hoodie',this)">
+            Hoodie
+        </button>
+
+        <button
+            class="category-btn"
+            onclick="selectCategory('Accessories',this)">
+            Accessories
+        </button>
+
+    </div>
+
+
+    <!-- ================= ADSENSE ================= -->
+
+    <div class="ad-box">
+
+        <ins class="adsbygoogle"
+             style="display:block"
+             data-ad-client="ca-pub-7139898909046849"
+             data-ad-slot="0000000000"
+             data-ad-format="auto"
+             data-full-width-responsive="true">
+        </ins>
+
+    </div>
+
+
+    <!-- PRODUCTS -->
+
+    <div
+        id="productsGrid"
+        class="products-grid">
+
+        <div class="loading">
+            Loading products...
+        </div>
+
+    </div>
 
 </main>
 
-<section class="features">
 
-  <div class="feature">
-    <div class="feature-icon">🚚</div>
-    <h3>Fast Delivery</h3>
-    <p>Delivery available across Bangladesh.</p>
-  </div>
+<!-- ================= ADMIN PANEL ================= -->
 
-  <div class="feature">
-    <div class="feature-icon">💳</div>
-    <h3>Easy Payment</h3>
-    <p>Cash on Delivery available.</p>
-  </div>
+<section id="adminPanel" class="admin-panel">
 
-  <div class="feature">
-    <div class="feature-icon">✅</div>
-    <h3>Trusted Shop</h3>
-    <p>Quality products and reliable service.</p>
-  </div>
+    <div class="admin-header">
+
+        <div>
+
+            <h2>Admin Dashboard</h2>
+
+            <small id="adminEmail"></small>
+
+        </div>
+
+        <button
+            class="btn btn-danger"
+            onclick="logoutAdmin()">
+            Logout
+        </button>
+
+    </div>
+
+
+    <!-- STATS -->
+
+    <div class="stats">
+
+        <div class="stat">
+
+            Products
+
+            <strong id="productStat">
+                0
+            </strong>
+
+        </div>
+
+        <div class="stat">
+
+            Cart Items
+
+            <strong id="cartStat">
+                0
+            </strong>
+
+        </div>
+
+        <div class="stat">
+
+            Orders
+
+            <strong id="orderStat">
+                0
+            </strong>
+
+        </div>
+
+    </div>
+
+
+    <!-- ADD PRODUCT -->
+
+    <div class="admin-box">
+
+        <h3 id="productFormTitle">
+            ➕ Add New Product
+        </h3>
+
+        <br>
+
+
+        <div class="form-row">
+
+            <div class="form-group">
+
+                <label>
+                    Product Name *
+                </label>
+
+                <input
+                    id="productName"
+                    type="text"
+                    placeholder="Example: Premium T-Shirt">
+
+            </div>
+
+
+            <div class="form-group">
+
+                <label>
+                    Category *
+                </label>
+
+                <select id="productCategory">
+
+                    <option value="Men">
+                        Men
+                    </option>
+
+                    <option value="Women">
+                        Women
+                    </option>
+
+                    <option value="T-Shirt">
+                        T-Shirt
+                    </option>
+
+                    <option value="Shirt">
+                        Shirt
+                    </option>
+
+                    <option value="Pants">
+                        Pants
+                    </option>
+
+                    <option value="Hoodie">
+                        Hoodie
+                    </option>
+
+                    <option value="Accessories">
+                        Accessories
+                    </option>
+
+                </select>
+
+            </div>
+
+        </div>
+
+
+        <div class="form-row">
+
+            <div class="form-group">
+
+                <label>
+                    Price (৳) *
+                </label>
+
+                <input
+                    id="productPrice"
+                    type="number"
+                    min="0"
+                    placeholder="650">
+
+            </div>
+
+
+            <div class="form-group">
+
+                <label>
+                    Stock
+                </label>
+
+                <input
+                    id="productStock"
+                    type="number"
+                    min="0"
+                    value="10">
+
+            </div>
+
+        </div>
+
+
+        <div class="form-group">
+
+            <label>
+                Description
+            </label>
+
+            <textarea
+                id="productDescription"
+                placeholder="Write product details..."></textarea>
+
+        </div>
+
+
+        <!-- IMAGE URLS -->
+
+        <div class="form-group">
+
+            <label>
+                Product Images
+            </label>
+
+            <p style="font-size:13px;color:#6b7280;margin:5px 0 10px;line-height:1.5;">
+
+                Add direct image URLs. You can add up to 6 images.
+                Firebase Storage is not required.
+
+            </p>
+
+
+            <input
+                id="imageUrl1"
+                type="url"
+                placeholder="Image URL 1"
+                style="margin-bottom:8px;width:100%;padding:12px;border:1px solid #d1d5db;border-radius:8px;">
+
+
+            <input
+                id="imageUrl2"
+                type="url"
+                placeholder="Image URL 2"
+                style="margin-bottom:8px;width:100%;padding:12px;border:1px solid #d1d5db;border-radius:8px;">
+
+
+            <input
+                id="imageUrl3"
+                type="url"
+                placeholder="Image URL 3"
+                style="margin-bottom:8px;width:100%;padding:12px;border:1px solid #d1d5db;border-radius:8px;">
+
+
+            <input
+                id="imageUrl4"
+                type="url"
+                placeholder="Image URL 4"
+                style="margin-bottom:8px;width:100%;padding:12px;border:1px solid #d1d5db;border-radius:8px;">
+
+
+            <input
+                id="imageUrl5"
+                type="url"
+                placeholder="Image URL 5"
+                style="margin-bottom:8px;width:100%;padding:12px;border:1px solid #d1d5db;border-radius:8px;">
+
+
+            <input
+                id="imageUrl6"
+                type="url"
+                placeholder="Image URL 6"
+                style="margin-bottom:8px;width:100%;padding:12px;border:1px solid #d1d5db;border-radius:8px;">
+
+        </div>
+
+
+        <div
+            id="imagePreview"
+            class="image-preview">
+        </div>
+
+
+        <div class="form-actions">
+
+            <button
+                class="btn btn-success"
+                onclick="saveProduct()">
+                💾 Save Product
+            </button>
+
+            <button
+                class="btn btn-light"
+                onclick="clearProductForm()">
+                Clear
+            </button>
+
+        </div>
+
+    </div>
+
+
+    <!-- MANAGE PRODUCTS -->
+
+    <div class="admin-box">
+
+        <h3>
+            📦 Manage Products
+        </h3>
+
+        <br>
+
+        <div
+            id="adminProducts"
+            class="admin-products">
+
+            <div class="loading">
+                Loading...
+            </div>
+
+        </div>
+
+    </div>
 
 </section>
 
-<footer class="footer">
 
-  <div class="footer-inner">
+<!-- ================= FOOTER ================= -->
 
-    <div>
-      <h3>Trust Shop BD</h3>
-      <p>
-        Your trusted online clothing shop in Bangladesh.
-      </p>
-    </div>
+<footer>
 
-    <div>
-      <h3>Contact</h3>
-      <p>
-        WhatsApp:
-        <a href="https://wa.me/8801580950532" target="_blank">
-          01580950532
-        </a>
-      </p>
-      <p>
+<div class="footer-inner">
+
+    <h2>
+        Trust Shop BD
+    </h2>
+
+    <p>
+        Your trusted online fashion shop in Bangladesh.
+    </p>
+
+    <p>
         Email:
         <a href="mailto:hamja9539@gmail.com">
-          hamja9539@gmail.com
+            hamja9539@gmail.com
         </a>
-      </p>
-    </div>
+    </p>
 
-    <div>
-      <h3>Categories</h3>
-      <p>Men</p>
-      <p>Women</p>
-      <p>T-Shirt</p>
-      <p>Shirt</p>
-      <p>Pants</p>
-    </div>
+    <a
+        class="whatsapp"
+        href="https://wa.me/8801580950532"
+        target="_blank">
 
-  </div>
+        💬 WhatsApp: 01580950532
 
-  <div class="copyright">
-    © 2026 Trust Shop BD. All rights reserved.
-  </div>
+    </a>
+
+    <p style="margin-top:20px;">
+        © 2026 Trust Shop BD. All rights reserved.
+    </p>
+
+</div>
 
 </footer>
 
-<a
-  class="whatsapp"
-  href="https://wa.me/8801580950532"
-  target="_blank"
-  title="WhatsApp"
->☏</a>
 
+<!-- ================= PRODUCT MODAL ================= -->
 
-<!-- PRODUCT DETAIL MODAL -->
-<div class="modal" id="detailModal">
+<div id="productModal" class="modal">
 
-  <div class="modal-content modal-large">
+<div class="modal-content modal-large">
 
-    <button class="close" onclick="closeModal('detailModal')">×</button>
+    <button
+        class="close"
+        onclick="closeModal('productModal')">
+        ×
+    </button>
 
-    <div id="detailContent"></div>
+    <div id="productDetail"></div>
 
-  </div>
+</div>
 
 </div>
 
 
-<!-- CART MODAL -->
-<div class="modal" id="cartModal">
+<!-- ================= CART MODAL ================= -->
 
-  <div class="modal-content">
+<div id="cartModal" class="modal">
 
-    <button class="close" onclick="closeModal('cartModal')">×</button>
+<div class="modal-content">
 
-    <h2>🛒 Your Cart</h2>
+    <button
+        class="close"
+        onclick="closeModal('cartModal')">
+        ×
+    </button>
+
+    <h2>
+        🛒 Your Cart
+    </h2>
+
+    <br>
 
     <div id="cartItems"></div>
 
-    <div id="cartTotal" class="cart-total"></div>
+    <div id="cartFooter"></div>
+
+</div>
+
+</div>
+
+
+<!-- ================= CHECKOUT MODAL ================= -->
+
+<div id="checkoutModal" class="modal">
+
+<div class="modal-content">
 
     <button
-      id="checkoutBtn"
-      class="btn btn-primary"
-      style="width:100%;"
-      onclick="openCheckout()"
-    >
-      Proceed to Checkout
+        class="close"
+        onclick="closeModal('checkoutModal')">
+        ×
     </button>
 
-  </div>
+    <h2>
+        📦 Checkout
+    </h2>
 
-</div>
+    <br>
 
 
-<!-- CHECKOUT MODAL -->
-<div class="modal" id="checkoutModal">
+    <div class="form-group">
 
-  <div class="modal-content">
+        <label>
+            Your Name *
+        </label>
 
-    <button class="close" onclick="closeModal('checkoutModal')">×</button>
-
-    <h2>📦 Checkout</h2>
-
-    <div id="checkoutMessage" class="message"></div>
-
-    <form id="checkoutForm">
-
-      <div class="form-group">
-        <label>Full Name *</label>
-        <input id="customerName" required>
-      </div>
-
-      <div class="form-group">
-        <label>Mobile Number *</label>
-        <input id="customerPhone" type="tel" required>
-      </div>
-
-      <div class="form-group">
-        <label>Delivery Address *</label>
-        <textarea id="customerAddress" required></textarea>
-      </div>
-
-      <div class="form-group">
-        <label>Payment Method</label>
-        <select id="paymentMethod">
-          <option value="Cash on Delivery">Cash on Delivery</option>
-        </select>
-      </div>
-
-      <button class="btn btn-primary" style="width:100%;" type="submit">
-        Place Order
-      </button>
-
-    </form>
-
-  </div>
-
-</div>
-
-
-<!-- ADMIN LOGIN -->
-<div class="modal" id="loginModal">
-
-  <div class="modal-content" style="max-width:430px;">
-
-    <button class="close" onclick="closeModal('loginModal')">×</button>
-
-    <h2>🔐 Admin Login</h2>
-
-    <p style="color:#777;margin:8px 0 18px;">
-      Login with your Firebase Authentication account.
-    </p>
-
-    <div id="loginMessage" class="message"></div>
-
-    <form id="loginForm">
-
-      <div class="form-group">
-        <label>Email</label>
-        <input id="loginEmail" type="email" required>
-      </div>
-
-      <div class="form-group">
-        <label>Password</label>
-        <input id="loginPassword" type="password" required>
-      </div>
-
-      <button class="btn btn-primary" style="width:100%;" type="submit">
-        Login
-      </button>
-
-    </form>
-
-  </div>
-
-</div>
-
-
-<!-- ADMIN DASHBOARD -->
-<div class="modal" id="adminModal">
-
-  <div class="modal-content modal-large">
-
-    <button class="close" onclick="closeModal('adminModal')">×</button>
-
-    <div class="admin-head">
-      <div>
-        <h2>⚙️ Admin Dashboard</h2>
-        <p id="adminEmailText" style="color:#777;"></p>
-      </div>
-
-      <button class="btn btn-danger" onclick="logoutAdmin()">
-        Logout
-      </button>
-    </div>
-
-    <div id="adminMessage" class="message"></div>
-
-    <div class="admin-form">
-
-      <h3 id="formTitle">➕ Add Product</h3>
-
-      <form id="productForm">
-
-        <input type="hidden" id="editingId">
-
-        <div class="form-row">
-
-          <div class="form-group">
-            <label>Product Name *</label>
-            <input id="productName" required>
-          </div>
-
-          <div class="form-group">
-            <label>Price (৳) *</label>
-            <input id="productPrice" type="number" min="0" step="0.01" required>
-          </div>
-
-        </div>
-
-        <div class="form-row">
-
-          <div class="form-group">
-            <label>Category *</label>
-
-            <select id="productCategory" required>
-              <option value="">Select Category</option>
-              <option>Men</option>
-              <option>Women</option>
-              <option>T-Shirt</option>
-              <option>Shirt</option>
-              <option>Pants</option>
-              <option>Hoodie</option>
-              <option>Accessories</option>
-            </select>
-
-          </div>
-
-          <div class="form-group">
-            <label>Stock *</label>
-            <input id="productStock" type="number" min="0" value="1" required>
-          </div>
-
-        </div>
-
-        <div class="form-group">
-          <label>Description</label>
-          <textarea id="productDescription" placeholder="Product details..."></textarea>
-        </div>
-
-        <div class="form-group">
-
-          <label>Product Images (Maximum 6)</label>
-
-          <div class="file-area" id="fileArea">
-
-            <input
-              type="file"
-              id="productImages"
-              accept="image/*"
-              multiple
-            >
-
-            <div>
-              📷<br>
-              <b>Click to select images</b>
-              <br>
-              or drag & drop here
-              <br>
-              <small>Images will be compressed and uploaded to Firebase Storage.</small>
-            </div>
-
-          </div>
-
-          <div id="previewGrid" class="preview-grid"></div>
-
-        </div>
-
-        <div class="progress" id="uploadProgress">
-          <div class="progress-bar" id="uploadProgressBar"></div>
-        </div>
-
-        <div style="display:flex;gap:8px;">
-
-          <button
-            type="submit"
-            id="saveProductBtn"
-            class="btn btn-primary"
-          >
-            💾 Save Product
-          </button>
-
-          <button
-            type="button"
-            class="btn btn-light"
-            onclick="resetProductForm()"
-          >
-            Clear
-          </button>
-
-        </div>
-
-      </form>
+        <input
+            id="customerName"
+            type="text"
+            placeholder="Your name">
 
     </div>
 
-    <h3 style="margin-bottom:12px;">📦 Your Products</h3>
 
-    <div id="adminProducts"></div>
+    <div class="form-group">
 
-  </div>
+        <label>
+            Mobile Number *
+        </label>
+
+        <input
+            id="customerPhone"
+            type="tel"
+            placeholder="01XXXXXXXXX">
+
+    </div>
+
+
+    <div class="form-group">
+
+        <label>
+            Delivery Address *
+        </label>
+
+        <textarea
+            id="customerAddress"
+            placeholder="Full delivery address"></textarea>
+
+    </div>
+
+
+    <div class="form-group">
+
+        <label>
+            Note
+        </label>
+
+        <textarea
+            id="customerNote"
+            placeholder="Optional note"></textarea>
+
+    </div>
+
+
+    <div id="checkoutSummary"></div>
+
+
+    <button
+        class="btn btn-success"
+        style="width:100%;margin-top:12px;"
+        onclick="placeOrder()">
+
+        ✅ Place Order & WhatsApp
+
+    </button>
 
 </div>
 
+</div>
+
+
+<!-- ================= LOGIN MODAL ================= -->
+
+<div id="loginModal" class="modal">
+
+<div class="modal-content">
+
+    <button
+        class="close"
+        onclick="closeModal('loginModal')">
+        ×
+    </button>
+
+    <h2>
+        🔐 Admin Login
+    </h2>
+
+    <br>
+
+
+    <div class="form-group">
+
+        <label>
+            Admin Email
+        </label>
+
+        <input
+            id="loginEmail"
+            type="email"
+            placeholder="Enter admin email">
+
+    </div>
+
+
+    <div class="form-group">
+
+        <label>
+            Password
+        </label>
+
+        <input
+            id="loginPassword"
+            type="password"
+            placeholder="Enter password">
+
+    </div>
+
+
+    <button
+        class="btn btn-primary"
+        style="width:100%;"
+        onclick="loginAdmin()">
+
+        🔐 Login
+
+    </button>
+
+</div>
+
+</div>
+
+
+<!-- ================= TOAST ================= -->
+
+<div id="toast" class="toast"></div>
+
+
+<!-- ==================================================
+     FIREBASE
+================================================== -->
 
 <script type="module">
 
-/* =========================================================
-   FIREBASE
-========================================================= */
-
 import {
-  initializeApp
+    initializeApp
 } from "https://www.gstatic.com/firebasejs/12.1.0/firebase-app.js";
 
 import {
-  getAuth,
-  signInWithEmailAndPassword,
-  onAuthStateChanged,
-  signOut
+    getAuth,
+    signInWithEmailAndPassword,
+    onAuthStateChanged,
+    signOut
 } from "https://www.gstatic.com/firebasejs/12.1.0/firebase-auth.js";
 
 import {
-  getFirestore,
-  collection,
-  addDoc,
-  getDocs,
-  doc,
-  updateDoc,
-  deleteDoc,
-  serverTimestamp,
-  query,
-  orderBy
+    getFirestore,
+    collection,
+    addDoc,
+    getDocs,
+    getDoc,
+    doc,
+    updateDoc,
+    deleteDoc,
+    serverTimestamp
 } from "https://www.gstatic.com/firebasejs/12.1.0/firebase-firestore.js";
 
-import {
-  getStorage,
-  ref,
-  uploadBytes,
-  getDownloadURL,
-  deleteObject
-} from "https://www.gstatic.com/firebasejs/12.1.0/firebase-storage.js";
 
+/* ==================================================
+   FIREBASE CONFIG
+================================================== */
 
 const firebaseConfig = {
-  apiKey: "AIzaSyCDCOIYo9wlK1Z-luMb7Ckny1j10ZbDP8",
-  authDomain: "trust-shop-bd-6047c.firebaseapp.com",
-  projectId: "trust-shop-bd-6047c",
-  storageBucket: "trust-shop-bd-6047c.firebasestorage.app",
-  messagingSenderId: "312927877037",
-  appId: "1:312927877:web:2dbb793c9b1828ce29d324",
-  measurementId: "G-4YPXE0RM3X"
+
+    apiKey:
+    "AIzaSyCDCOIYo9wlK1Z-luMb7Ckny1j10ZbDP8",
+
+    authDomain:
+    "trust-shop-bd-6047c.firebaseapp.com",
+
+    projectId:
+    "trust-shop-bd-6047c",
+
+    storageBucket:
+    "trust-shop-bd-6047c.firebasestorage.app",
+
+    messagingSenderId:
+    "312927877037",
+
+    appId:
+    "1:312927877037:web:2dbb793c9b1828ce29d324",
+
+    measurementId:
+    "G-4YPXE0RM3X"
+
 };
 
-const app = initializeApp(firebaseConfig);
 
-const auth = getAuth(app);
-const db = getFirestore(app);
-const storage = getStorage(app);
+/* ==================================================
+   INITIALIZE FIREBASE
+================================================== */
+
+const app =
+initializeApp(firebaseConfig);
+
+const auth =
+getAuth(app);
+
+const db =
+getFirestore(app);
 
 
-/* =========================================================
-   VARIABLES
-========================================================= */
+/* ==================================================
+   GLOBAL STATE
+================================================== */
 
 let products = [];
-let cart = [];
+
+let cart =
+JSON.parse(
+    localStorage.getItem("trustShopCart") || "[]"
+);
 
 let currentUser = null;
+
 let selectedCategory = "All";
+
 let selectedProduct = null;
 
-let editingProduct = null;
+let editingProductId = null;
 
-let selectedFiles = [];
-let existingImages = [];
-let existingImagePaths = [];
 
-
-/* =========================================================
-   HELPERS
-========================================================= */
-
-const $ = id => document.getElementById(id);
-
-function escapeHtml(value){
-  return String(value ?? "")
-    .replaceAll("&","&amp;")
-    .replaceAll("<","&lt;")
-    .replaceAll(">","&gt;")
-    .replaceAll('"',"&quot;")
-    .replaceAll("'","&#039;");
-}
-
-function formatPrice(price){
-  return "৳" + Number(price || 0).toLocaleString("en-BD");
-}
-
-function showMessage(id,text,type="success"){
-  const el = $(id);
-
-  if(!el) return;
-
-  el.textContent = text;
-  el.className = "message " + type;
-}
-
-function clearMessage(id){
-  const el = $(id);
-
-  if(el){
-    el.textContent = "";
-    el.className = "message";
-  }
-}
-
-function closeModal(id){
-  $(id)?.classList.remove("show");
-}
-
-function openModal(id){
-  $(id)?.classList.add("show");
-}
-
-
-/* =========================================================
-   NAVIGATION
-========================================================= */
-
-window.scrollHome = function(){
-  $("home").scrollIntoView({behavior:"smooth"});
-};
-
-window.scrollProducts = function(){
-  $("products").scrollIntoView({behavior:"smooth"});
-};
-
-
-/* =========================================================
-   CART STORAGE
-========================================================= */
-
-function saveCart(){
-  localStorage.setItem("trustShopCart",JSON.stringify(cart));
-}
-
-function loadCart(){
-  try{
-    cart = JSON.parse(localStorage.getItem("trustShopCart") || "[]");
-    if(!Array.isArray(cart)) cart=[];
-  }catch{
-    cart=[];
-  }
-
-  updateCartCount();
-}
-
-function updateCartCount(){
-
-  const count = cart.reduce(
-    (total,item)=>total + Number(item.qty || 0),
-    0
-  );
-
-  $("cartCount").textContent = count;
-}
-
-
-/* =========================================================
-   LOAD PRODUCTS
-========================================================= */
-
-async function loadProducts(){
-
-  $("productsGrid").innerHTML =
-    `<div class="loading">Loading products...</div>`;
-
-  try{
-
-    const q = query(
-      collection(db,"products"),
-      orderBy("createdAt","desc")
-    );
-
-    const snap = await getDocs(q);
-
-    products = [];
-
-    snap.forEach(item=>{
-      products.push({
-        id:item.id,
-        ...item.data()
-      });
-    });
-
-    renderProducts();
-
-  }catch(error){
-
-    console.error(error);
-
-    /*
-      If createdAt is missing from old products,
-      fallback without orderBy.
-    */
-
-    try{
-
-      const snap = await getDocs(collection(db,"products"));
-
-      products=[];
-
-      snap.forEach(item=>{
-        products.push({
-          id:item.id,
-          ...item.data()
-        });
-      });
-
-      products.sort((a,b)=>{
-        const ta = a.createdAt?.seconds || 0;
-        const tb = b.createdAt?.seconds || 0;
-        return tb-ta;
-      });
-
-      renderProducts();
-
-    }catch(error2){
-
-      console.error(error2);
-
-      $("productsGrid").innerHTML =
-        `<div class="empty">
-          ❌ Products load failed.<br><br>
-          Firebase Firestore Rules/Config check করুন।
-        </div>`;
-
-    }
-
-  }
-
-}
-
-
-/* =========================================================
-   GET PRODUCT IMAGE
-========================================================= */
-
-function getProductImages(product){
-
-  let images=[];
-
-  if(Array.isArray(product.images)){
-    images.push(...product.images);
-  }
-
-  if(!images.length && product.image){
-    images.push(product.image);
-  }
-
-  /*
-    Old Base64 image support
-  */
-
-  return images.filter(Boolean);
-}
-
-function getFirstImage(product){
-
-  const images = getProductImages(product);
-
-  return images[0] ||
-    "https://via.placeholder.com/600x600?text=No+Image";
-}
-
-
-/* =========================================================
-   RENDER PRODUCTS
-========================================================= */
-
-function renderProducts(){
-
-  const search =
-    $("searchInput").value.trim().toLowerCase();
-
-  const filtered = products.filter(product=>{
-
-    const categoryMatch =
-      selectedCategory === "All" ||
-      String(product.category || "") === selectedCategory;
-
-    const text =
-      `${product.name || ""} ${product.description || ""} ${product.category || ""}`
-      .toLowerCase();
-
-    const searchMatch =
-      !search || text.includes(search);
-
-    return categoryMatch && searchMatch;
-  });
-
-  if(!filtered.length){
-
-    $("productsGrid").innerHTML =
-      `<div class="empty" style="grid-column:1/-1;">
-        😔 No products found.
-      </div>`;
-
-    return;
-  }
-
-  $("productsGrid").innerHTML =
-    filtered.map(product=>{
-
-      const stock = Number(product.stock || 0);
-
-      return `
-        <div class="product-card">
-
-          <img
-            class="product-img"
-            src="${escapeHtml(getFirstImage(product))}"
-            alt="${escapeHtml(product.name)}"
-            loading="lazy"
-            onclick="viewProduct('${product.id}')"
-          >
-
-          <div class="product-info">
-
-            <div class="product-name">
-              ${escapeHtml(product.name)}
-            </div>
-
-            <div class="product-category">
-              ${escapeHtml(product.category || "Other")}
-            </div>
-
-            <div class="price">
-              ${formatPrice(product.price)}
-            </div>
-
-            <div class="stock">
-              ${
-                stock > 0
-                ? `Stock: ${stock}`
-                : `<span style="color:#ef4444;">Out of stock</span>`
-              }
-            </div>
-
-            <div class="product-actions">
-
-              <button
-                class="btn btn-dark"
-                style="flex:1"
-                onclick="viewProduct('${product.id}')"
-              >
-                View
-              </button>
-
-              <button
-                class="btn btn-primary"
-                style="flex:1"
-                ${stock<=0 ? "disabled":""}
-                onclick="addToCart('${product.id}')"
-              >
-                Add
-              </button>
-
-            </div>
-
-          </div>
-
-        </div>
-      `;
-
-    }).join("");
-}
-
-
-/* =========================================================
-   SEARCH
-========================================================= */
-
-$("searchInput").addEventListener("input",renderProducts);
-
-window.filterCategory = function(category,button){
-
-  selectedCategory = category;
-
-  document.querySelectorAll(".category-btn")
-    .forEach(btn=>btn.classList.remove("active"));
-
-  button.classList.add("active");
-
-  renderProducts();
-};
-
-
-/* =========================================================
-   PRODUCT DETAIL
-========================================================= */
-
-window.viewProduct = function(id){
-
-  const product =
-    products.find(item=>item.id === id);
-
-  if(!product) return;
-
-  selectedProduct = product;
-
-  const images = getProductImages(product);
-
-  const stock = Number(product.stock || 0);
-
-  $("detailContent").innerHTML = `
-
-    <div class="detail">
-
-      <div>
-
-        <img
-          id="detailMainImage"
-          class="detail-main-img"
-          src="${escapeHtml(images[0] || getFirstImage(product))}"
-        >
-
-        <div class="thumbs">
-
-          ${
-            images.map((img,index)=>`
-              <img
-                class="thumb ${index===0?"active":""}"
-                src="${escapeHtml(img)}"
-                onclick="changeDetailImage(this,'${escapeHtml(img)}')"
-              >
-            `).join("")
-          }
-
-        </div>
-
-      </div>
-
-      <div>
-
-        <h2>${escapeHtml(product.name)}</h2>
-
-        <div class="price">
-          ${formatPrice(product.price)}
-        </div>
-
-        <p>
-          <b>Category:</b>
-          ${escapeHtml(product.category || "Other")}
-        </p>
-
-        <p>
-          <b>Stock:</b>
-          ${stock}
-        </p>
-
-        <div class="detail-desc">
-          ${escapeHtml(product.description || "No description available.")}
-        </div>
-
-        <div class="qty">
-
-          <button onclick="changeQty(-1)">−</button>
-
-          <b id="detailQty">1</b>
-
-          <button onclick="changeQty(1)">+</button>
-
-        </div>
-
-        <button
-          class="btn btn-primary"
-          style="width:100%;"
-          ${stock<=0 ? "disabled":""}
-          onclick="addDetailToCart()"
-        >
-          🛒 Add to Cart
-        </button>
-
-      </div>
-
-    </div>
-
-  `;
-
-  openModal("detailModal");
-};
-
-window.changeDetailImage = function(element,url){
-
-  $("detailMainImage").src = url;
-
-  document.querySelectorAll(".thumb")
-    .forEach(img=>img.classList.remove("active"));
-
-  element.classList.add("active");
-};
-
-window.changeQty = function(change){
-
-  const el = $("detailQty");
-
-  if(!el || !selectedProduct) return;
-
-  let qty = Number(el.textContent) + change;
-
-  const stock = Number(selectedProduct.stock || 0);
-
-  qty = Math.max(1,Math.min(qty,stock));
-
-  el.textContent = qty;
-};
-
-window.addDetailToCart = function(){
-
-  if(!selectedProduct) return;
-
-  const qty = Number($("detailQty").textContent || 1);
-
-  addProductToCart(selectedProduct,qty);
-
-  closeModal("detailModal");
-  openCart();
-};
-
-
-/* =========================================================
-   CART
-========================================================= */
-
-function addProductToCart(product,qty=1){
-
-  const existing =
-    cart.find(item=>item.id === product.id);
-
-  const stock = Number(product.stock || 0);
-
-  if(existing){
-
-    existing.qty =
-      Math.min(existing.qty + qty,stock);
-
-  }else{
-
-    cart.push({
-      id:product.id,
-      name:product.name,
-      price:Number(product.price || 0),
-      image:getFirstImage(product),
-      qty:Math.min(qty,stock)
-    });
-
-  }
-
-  saveCart();
-  updateCartCount();
-}
-
-window.addToCart = function(id){
-
-  const product =
-    products.find(item=>item.id === id);
-
-  if(!product) return;
-
-  if(Number(product.stock || 0)<=0){
-    alert("This product is out of stock.");
-    return;
-  }
-
-  addProductToCart(product,1);
-
-  alert("Product added to cart!");
-};
-
-window.openCart = function(){
-
-  renderCart();
-
-  openModal("cartModal");
-};
-
-function renderCart(){
-
-  if(!cart.length){
-
-    $("cartItems").innerHTML =
-      `<div class="empty">
-        Your cart is empty 🛒
-      </div>`;
-
-    $("cartTotal").textContent = "";
-
-    $("checkoutBtn").disabled = true;
-
-    return;
-  }
-
-  $("checkoutBtn").disabled = false;
-
-  let total=0;
-
-  $("cartItems").innerHTML =
-    cart.map(item=>{
-
-      const itemTotal =
-        Number(item.price) * Number(item.qty);
-
-      total += itemTotal;
-
-      return `
-        <div class="cart-item">
-
-          <img
-            src="${escapeHtml(item.image)}"
-            alt="${escapeHtml(item.name)}"
-          >
-
-          <div>
-
-            <div class="cart-name">
-              ${escapeHtml(item.name)}
-            </div>
-
-            <div>
-              ${formatPrice(item.price)}
-            </div>
-
-            <div class="cart-controls">
-
-              <button onclick="changeCartQty('${item.id}',-1)">
-                −
-              </button>
-
-              <b>${item.qty}</b>
-
-              <button onclick="changeCartQty('${item.id}',1)">
-                +
-              </button>
-
-              <button
-                style="margin-left:5px;background:#fee2e2;color:#991b1b;"
-                onclick="removeCart('${item.id}')"
-              >
-                Remove
-              </button>
-
-            </div>
-
-          </div>
-
-          <b>
-            ${formatPrice(itemTotal)}
-          </b>
-
-        </div>
-      `;
-
-    }).join("");
-
-  $("cartTotal").textContent =
-    "Total: " + formatPrice(total);
-}
-
-window.changeCartQty = function(id,change){
-
-  const item =
-    cart.find(x=>x.id===id);
-
-  if(!item) return;
-
-  const product =
-    products.find(x=>x.id===id);
-
-  const stock =
-    Number(product?.stock || item.qty);
-
-  item.qty += change;
-
-  if(item.qty<=0){
-
-    cart =
-      cart.filter(x=>x.id!==id);
-
-  }else{
-
-    item.qty =
-      Math.min(item.qty,stock);
-
-  }
-
-  saveCart();
-  updateCartCount();
-  renderCart();
-};
-
-window.removeCart = function(id){
-
-  cart =
-    cart.filter(item=>item.id!==id);
-
-  saveCart();
-  updateCartCount();
-  renderCart();
-};
-
-
-/* =========================================================
-   CHECKOUT
-========================================================= */
-
-window.openCheckout = function(){
-
-  if(!cart.length){
-    alert("Your cart is empty.");
-    return;
-  }
-
-  clearMessage("checkoutMessage");
-
-  closeModal("cartModal");
-  openModal("checkoutModal");
-};
-
-$("checkoutForm").addEventListener("submit",async event=>{
-
-  event.preventDefault();
-
-  if(!cart.length){
-    showMessage(
-      "checkoutMessage",
-      "Your cart is empty.",
-      "error"
-    );
-    return;
-  }
-
-  const name =
-    $("customerName").value.trim();
-
-  const phone =
-    $("customerPhone").value.trim();
-
-  const address =
-    $("customerAddress").value.trim();
-
-  const payment =
-    $("paymentMethod").value;
-
-  let total=0;
-
-  const orderItems =
-    cart.map(item=>{
-
-      const subtotal =
-        Number(item.price) * Number(item.qty);
-
-      total += subtotal;
-
-      return {
-        productId:item.id,
-        name:item.name,
-        price:Number(item.price),
-        quantity:Number(item.qty),
-        subtotal
-      };
-
-    });
-
-  const orderData = {
-
-    customerName:name,
-    phone:phone,
-    address:address,
-    paymentMethod:payment,
-
-    items:orderItems,
-
-    total:total,
-
-    status:"Pending",
-
-    createdAt:serverTimestamp()
-
-  };
-
-  const button =
-    event.target.querySelector("button[type=submit]");
-
-  button.disabled=true;
-  button.textContent="Placing Order...";
-
-  try{
-
-    const orderRef =
-      await addDoc(
-        collection(db,"orders"),
-        orderData
-      );
-
-    let whatsappText =
-      `Hello Trust Shop BD,%0A%0A` +
-      `I want to place an order.%0A%0A` +
-      `Order ID: ${orderRef.id}%0A` +
-      `Name: ${encodeURIComponent(name)}%0A` +
-      `Phone: ${encodeURIComponent(phone)}%0A` +
-      `Address: ${encodeURIComponent(address)}%0A` +
-      `Payment: ${encodeURIComponent(payment)}%0A%0A`;
-
-    orderItems.forEach(item=>{
-      whatsappText +=
-        `${encodeURIComponent(item.name)} x ${item.quantity} = ${formatPrice(item.subtotal)}%0A`;
-    });
-
-    whatsappText +=
-      `%0ATotal: ${formatPrice(total)}`;
-
-    cart=[];
-
-    saveCart();
-    updateCartCount();
-
-    showMessage(
-      "checkoutMessage",
-      "Order placed successfully!",
-      "success"
-    );
-
-    event.target.reset();
-
-    setTimeout(()=>{
-
-      closeModal("checkoutModal");
-
-      window.open(
-        "https://wa.me/8801580950532?text=" + whatsappText,
-        "_blank"
-      );
-
-    },700);
-
-  }catch(error){
-
-    console.error(error);
-
-    showMessage(
-      "checkoutMessage",
-      "Order failed. Firebase Rules check করুন।",
-      "error"
-    );
-
-  }finally{
-
-    button.disabled=false;
-    button.textContent="Place Order";
-
-  }
-
-});
-
-
-/* =========================================================
-   ADMIN LOGIN
-========================================================= */
-
-window.openAdminLogin = function(){
-
-  clearMessage("loginMessage");
-
-  if(currentUser){
-
-    openAdminDashboard();
-
-  }else{
-
-    openModal("loginModal");
-
-  }
-
-};
-
-$("loginForm").addEventListener("submit",async event=>{
-
-  event.preventDefault();
-
-  const email =
-    $("loginEmail").value.trim();
-
-  const password =
-    $("loginPassword").value;
-
-  const button =
-    event.target.querySelector("button[type=submit]");
-
-  button.disabled=true;
-  button.textContent="Logging in...";
-
-  try{
-
-    await signInWithEmailAndPassword(
-      auth,
-      email,
-      password
-    );
-
-    closeModal("loginModal");
-
-  }catch(error){
-
-    console.error(error);
-
-    let msg="Login failed.";
-
-    if(error.code === "auth/invalid-credential"){
-      msg="Email or password is incorrect.";
-    }
-
-    if(error.code === "auth/invalid-email"){
-      msg="Invalid email address.";
-    }
-
-    if(error.code === "auth/too-many-requests"){
-      msg="Too many attempts. Try again later.";
-    }
-
-    showMessage("loginMessage",msg,"error");
-
-  }finally{
-
-    button.disabled=false;
-    button.textContent="Login";
-
-  }
-
-});
-
-
-/* =========================================================
+/* ==================================================
    AUTH STATE
-========================================================= */
+================================================== */
 
 onAuthStateChanged(auth,user=>{
 
-  currentUser=user;
+    currentUser = user;
 
-  if(user){
+    const panel =
+    document.getElementById("adminPanel");
 
-    $("adminEmailText").textContent =
-      user.email || "";
 
-  }
+    if(user){
+
+        panel.classList.add("show");
+
+        document
+        .getElementById("adminEmail")
+        .textContent =
+        user.email || "";
+
+        closeModal("loginModal");
+
+        loadAdminProducts();
+
+        loadOrderCount();
+
+    }else{
+
+        panel.classList.remove("show");
+
+    }
 
 });
 
 
-/* =========================================================
-   ADMIN DASHBOARD
-========================================================= */
+/* ==================================================
+   LOAD PRODUCTS
+================================================== */
 
-function openAdminDashboard(){
+async function loadProducts(){
 
-  if(!currentUser){
-    openModal("loginModal");
-    return;
-  }
+    const grid =
+    document.getElementById("productsGrid");
 
-  $("adminEmailText").textContent =
-    currentUser.email || "";
+    grid.innerHTML =
+    `<div class="loading">Loading products...</div>`;
 
-  clearMessage("adminMessage");
 
-  openModal("adminModal");
+    try{
 
-  loadAdminProducts();
+        const snapshot =
+        await getDocs(
+            collection(db,"products")
+        );
+
+
+        products = [];
+
+
+        snapshot.forEach(item=>{
+
+            products.push({
+
+                id:item.id,
+
+                ...item.data()
+
+            });
+
+        });
+
+
+        products.sort((a,b)=>{
+
+            const aTime =
+            a.createdAt?.seconds || 0;
+
+            const bTime =
+            b.createdAt?.seconds || 0;
+
+            return bTime-aTime;
+
+        });
+
+
+        renderProducts();
+
+        updateStats();
+
+    }
+    catch(error){
+
+        console.error(error);
+
+        grid.innerHTML = `
+
+            <div class="empty">
+
+                <h3>
+                    Products could not be loaded
+                </h3>
+
+                <p style="margin-top:8px;">
+                    Check your Firestore Rules and Firebase configuration.
+                </p>
+
+            </div>
+
+        `;
+
+    }
+
 }
 
-window.logoutAdmin = async function(){
 
-  try{
+/* ==================================================
+   RENDER PRODUCTS
+================================================== */
 
-    await signOut(auth);
+function renderProducts(){
 
-    closeModal("adminModal");
+    const grid =
+    document.getElementById("productsGrid");
 
-    alert("Logged out.");
-
-  }catch(error){
-
-    console.error(error);
-
-  }
-
-};
+    const search =
+    document
+    .getElementById("searchInput")
+    .value
+    .toLowerCase()
+    .trim();
 
 
-/* =========================================================
-   FILE UPLOAD
-========================================================= */
+    const filtered =
+    products.filter(product=>{
 
-const fileInput = $("productImages");
-const fileArea = $("fileArea");
+        const categoryOK =
+        selectedCategory === "All" ||
+        product.category === selectedCategory;
 
-fileArea.addEventListener("click",()=>{
-  fileInput.click();
-});
 
-fileInput.addEventListener("change",event=>{
-  handleFiles([...event.target.files]);
-});
+        const text =
+        (
+            product.name || ""
+        ) + " " +
+        (
+            product.description || ""
+        ) + " " +
+        (
+            product.category || ""
+        );
 
-fileArea.addEventListener("dragover",event=>{
-  event.preventDefault();
-  fileArea.classList.add("drag");
-});
 
-fileArea.addEventListener("dragleave",()=>{
-  fileArea.classList.remove("drag");
-});
+        const searchOK =
+        !search ||
+        text.toLowerCase().includes(search);
 
-fileArea.addEventListener("drop",event=>{
 
-  event.preventDefault();
+        return categoryOK && searchOK;
 
-  fileArea.classList.remove("drag");
+    });
 
-  handleFiles([...event.dataTransfer.files]);
 
-});
+    if(filtered.length===0){
 
-function handleFiles(files){
+        grid.innerHTML = `
 
-  const imageFiles =
-    files.filter(file=>file.type.startsWith("image/"));
+            <div class="empty">
 
-  if(!imageFiles.length) return;
+                <h3>
+                    No products found
+                </h3>
 
-  if(selectedFiles.length + imageFiles.length > 6){
+                <p style="margin-top:8px;">
+                    Try another category or search.
+                </p>
 
-    alert("Maximum 6 images allowed.");
+            </div>
 
-    return;
-  }
+        `;
 
-  selectedFiles.push(...imageFiles);
+        return;
 
-  renderPreviews();
+    }
+
+
+    grid.innerHTML =
+    filtered.map(product=>{
+
+        const image =
+        getFirstImage(product);
+
+        const stock =
+        Number(product.stock ?? 0);
+
+
+        return `
+
+        <div class="product-card">
+
+            <div class="product-image">
+
+                ${
+                    image
+
+                    ?
+
+                    `
+                    <img
+                        src="${safeAttr(image)}"
+                        alt="${safeAttr(product.name || "Product")}"
+                        loading="lazy"
+                        onerror="this.style.display='none';this.nextElementSibling.style.display='flex';">
+
+                    <div
+                        class="no-image"
+                        style="display:none;">
+                        No Image
+                    </div>
+                    `
+
+                    :
+
+                    `
+                    <div class="no-image">
+                        No Image
+                    </div>
+                    `
+                }
+
+            </div>
+
+
+            <div class="product-info">
+
+                <div class="product-category">
+                    ${escapeHTML(product.category || "Product")}
+                </div>
+
+                <div class="product-name">
+                    ${escapeHTML(product.name || "Unnamed Product")}
+                </div>
+
+                <div class="product-price">
+                    ৳${money(product.price)}
+                </div>
+
+                <div class="product-stock">
+
+                    ${
+                        stock > 0
+
+                        ?
+
+                        `Stock: ${stock}`
+
+                        :
+
+                        `<span style="color:#dc2626;">
+                            Out of stock
+                         </span>`
+                    }
+
+                </div>
+
+
+                <div class="product-actions">
+
+                    <button
+                        class="btn btn-light"
+                        onclick="viewProduct('${product.id}')">
+
+                        View
+
+                    </button>
+
+
+                    <button
+                        class="btn btn-success"
+                        ${stock <= 0 ? "disabled" : ""}
+                        onclick="addToCart('${product.id}')">
+
+                        Add Cart
+
+                    </button>
+
+                </div>
+
+            </div>
+
+        </div>
+
+        `;
+
+    }).join("");
+
 }
 
-function renderPreviews(){
 
-  let html="";
+/* ==================================================
+   PRODUCT IMAGE HELPERS
+================================================== */
 
-  existingImages.forEach((url,index)=>{
+function getProductImages(product){
 
-    html += `
-      <div class="preview">
-
-        <img src="${escapeHtml(url)}">
-
-        <button
-          type="button"
-          onclick="removeExistingImage(${index})"
-        >
-          ×
-        </button>
-
-      </div>
-    `;
-
-  });
-
-  selectedFiles.forEach((file,index)=>{
-
-    const url =
-      URL.createObjectURL(file);
-
-    html += `
-      <div class="preview">
-
-        <img src="${url}">
-
-        <button
-          type="button"
-          onclick="removeSelectedFile(${index})"
-        >
-          ×
-        </button>
-
-      </div>
-    `;
-
-  });
-
-  $("previewGrid").innerHTML=html;
-}
-
-window.removeSelectedFile = function(index){
-
-  selectedFiles.splice(index,1);
-
-  renderPreviews();
-};
-
-window.removeExistingImage = function(index){
-
-  existingImages.splice(index,1);
-
-  existingImagePaths.splice(index,1);
-
-  renderPreviews();
-};
+    if(!product){
+        return [];
+    }
 
 
-/* =========================================================
-   IMAGE COMPRESSION
-========================================================= */
+    if(
+        Array.isArray(product.images)
+    ){
 
-function compressImage(file){
+        return product.images
+        .filter(Boolean);
 
-  return new Promise((resolve,reject)=>{
+    }
 
-    const reader = new FileReader();
 
-    reader.onload = event=>{
+    const oldImages = [];
 
-      const img = new Image();
 
-      img.onload = ()=>{
+    for(let i=1;i<=6;i++){
 
-        let width=img.width;
-        let height=img.height;
+        if(product["image"+i]){
 
-        const max=1600;
-
-        if(width>max || height>max){
-
-          if(width>height){
-
-            height =
-              Math.round(height * max / width);
-
-            width=max;
-
-          }else{
-
-            width =
-              Math.round(width * max / height);
-
-            height=max;
-
-          }
+            oldImages.push(
+                product["image"+i]
+            );
 
         }
 
-        const canvas =
-          document.createElement("canvas");
-
-        canvas.width=width;
-        canvas.height=height;
-
-        const ctx =
-          canvas.getContext("2d");
-
-        ctx.drawImage(
-          img,
-          0,
-          0,
-          width,
-          height
-        );
-
-        canvas.toBlob(
-          blob=>{
-
-            if(blob){
-
-              resolve(blob);
-
-            }else{
-
-              reject(
-                new Error("Image compression failed")
-              );
-
-            }
-
-          },
-          "image/webp",
-          .82
-        );
-
-      };
-
-      img.onerror=()=>reject(
-        new Error("Invalid image")
-      );
-
-      img.src=event.target.result;
-
-    };
-
-    reader.onerror=()=>reject(
-      new Error("File read failed")
-    );
-
-    reader.readAsDataURL(file);
-
-  });
-
-}
-
-
-/* =========================================================
-   UPLOAD IMAGE
-========================================================= */
-
-async function uploadProductImages(){
-
-  const urls=[];
-  const paths=[];
-
-  for(let i=0;i<selectedFiles.length;i++){
-
-    const file =
-      selectedFiles[i];
-
-    const blob =
-      await compressImage(file);
-
-    const random =
-      Math.random()
-        .toString(36)
-        .substring(2,10);
-
-    const path =
-      `products/${currentUser.uid}/${Date.now()}_${i}_${random}.webp`;
-
-    const storageRef =
-      ref(storage,path);
-
-    $("uploadProgressBar").style.width =
-      `${Math.round((i/selectedFiles.length)*100)}%`;
-
-    await uploadBytes(
-      storageRef,
-      blob,
-      {
-        contentType:"image/webp",
-        cacheControl:"public,max-age=31536000"
-      }
-    );
-
-    const url =
-      await getDownloadURL(storageRef);
-
-    urls.push(url);
-    paths.push(path);
-  }
-
-  $("uploadProgressBar").style.width="100%";
-
-  return {
-    urls,
-    paths
-  };
-}
-
-
-/* =========================================================
-   DELETE STORAGE FILE
-========================================================= */
-
-async function deleteStorageFile(path){
-
-  if(!path) return;
-
-  try{
-
-    await deleteObject(
-      ref(storage,path)
-    );
-
-  }catch(error){
-
-    /*
-      File may already be deleted.
-    */
-
-    console.warn(
-      "Storage delete warning:",
-      error
-    );
-
-  }
-
-}
-
-
-/* =========================================================
-   ADMIN PRODUCT FORM
-========================================================= */
-
-$("productForm").addEventListener("submit",async event=>{
-
-  event.preventDefault();
-
-  if(!currentUser){
-
-    showMessage(
-      "adminMessage",
-      "Please login first.",
-      "error"
-    );
-
-    return;
-  }
-
-  const name =
-    $("productName").value.trim();
-
-  const price =
-    Number($("productPrice").value);
-
-  const category =
-    $("productCategory").value;
-
-  const stock =
-    Number($("productStock").value);
-
-  const description =
-    $("productDescription").value.trim();
-
-  const editingId =
-    $("editingId").value.trim();
-
-  if(!name || !category || price<0 || stock<0){
-
-    showMessage(
-      "adminMessage",
-      "Please fill all required fields correctly.",
-      "error"
-    );
-
-    return;
-  }
-
-  /*
-    New product needs at least one image.
-    Existing product can keep old images.
-  */
-
-  if(!editingId &&
-     selectedFiles.length===0 &&
-     existingImages.length===0){
-
-    showMessage(
-      "adminMessage",
-      "Please select at least one product image.",
-      "error"
-    );
-
-    return;
-  }
-
-  const button =
-    $("saveProductBtn");
-
-  button.disabled=true;
-  button.textContent="Saving...";
-
-  $("uploadProgress").style.display="block";
-  $("uploadProgressBar").style.width="0%";
-
-  let uploadedPaths=[];
-
-  try{
-
-    let finalImages =
-      [...existingImages];
-
-    let finalPaths =
-      [...existingImagePaths];
-
-    /*
-      If new images selected:
-      Upload them and replace old images.
-    */
-
-    if(selectedFiles.length){
-
-      const uploaded =
-        await uploadProductImages();
-
-      uploadedPaths =
-        uploaded.paths;
-
-      finalImages =
-        uploaded.urls;
-
-      finalPaths =
-        uploaded.paths;
     }
 
-    const data = {
 
-      name,
-      price,
-      category,
-      stock,
-      description,
+    if(oldImages.length){
 
-      image:
-        finalImages[0] || "",
+        return oldImages;
 
-      images:
-        finalImages,
+    }
 
-      imagePaths:
-        finalPaths,
 
-      updatedAt:
+    if(product.image){
+
+        return [product.image];
+
+    }
+
+
+    return [];
+
+}
+
+
+function getFirstImage(product){
+
+    const images =
+    getProductImages(product);
+
+    return images[0] || "";
+
+}
+
+
+/* ==================================================
+   PRODUCT DETAIL
+================================================== */
+
+function viewProduct(id){
+
+    const product =
+    products.find(
+        p=>p.id===id
+    );
+
+
+    if(!product){
+        showToast("Product not found.");
+        return;
+    }
+
+
+    selectedProduct = product;
+
+
+    const images =
+    getProductImages(product);
+
+
+    const first =
+    images[0] || "";
+
+
+    document
+    .getElementById("productDetail")
+    .innerHTML = `
+
+        <div class="detail-grid">
+
+            <div>
+
+                <div
+                    class="detail-main-image"
+                    id="detailMainImage">
+
+                    ${
+                        first
+
+                        ?
+
+                        `
+                        <img
+                            src="${safeAttr(first)}"
+                            alt="${safeAttr(product.name || "Product")}">
+                        `
+
+                        :
+
+                        `
+                        <div class="no-image">
+                            No Image
+                        </div>
+                        `
+                    }
+
+                </div>
+
+
+                <div class="detail-thumbs">
+
+                    ${
+                        images.map((img,i)=>`
+
+                            <img
+                                src="${safeAttr(img)}"
+                                alt="Product image ${i+1}"
+                                onclick="changeDetailImage('${safeAttr(img)}')">
+
+                        `).join("")
+                    }
+
+                </div>
+
+            </div>
+
+
+            <div>
+
+                <div class="product-category">
+
+                    ${escapeHTML(product.category || "")}
+
+                </div>
+
+
+                <h2 class="detail-title">
+
+                    ${escapeHTML(product.name || "Product")}
+
+                </h2>
+
+
+                <div class="detail-price">
+
+                    ৳${money(product.price)}
+
+                </div>
+
+
+                <div>
+
+                    Stock:
+                    <strong>
+                        ${Number(product.stock ?? 0)}
+                    </strong>
+
+                </div>
+
+
+                <div class="detail-description">
+
+                    ${escapeHTML(
+                        product.description ||
+                        "No description available."
+                    )}
+
+                </div>
+
+
+                <button
+                    class="btn btn-success"
+                    style="width:100%;"
+                    ${Number(product.stock ?? 0)<=0 ? "disabled":""}
+                    onclick="addToCart('${product.id}');closeModal('productModal');">
+
+                    🛒 Add to Cart
+
+                </button>
+
+            </div>
+
+        </div>
+
+    `;
+
+
+    openModal("productModal");
+
+}
+
+
+function changeDetailImage(url){
+
+    const box =
+    document.getElementById(
+        "detailMainImage"
+    );
+
+
+    if(!box){
+        return;
+    }
+
+
+    box.innerHTML = `
+
+        <img
+            src="${safeAttr(url)}"
+            alt="Product image">
+
+    `;
+
+}
+
+
+/* ==================================================
+   CATEGORY
+================================================== */
+
+function selectCategory(category,button){
+
+    selectedCategory = category;
+
+
+    document
+    .querySelectorAll(".category-btn")
+    .forEach(btn=>{
+        btn.classList.remove("active");
+    });
+
+
+    if(button){
+
+        button.classList.add("active");
+
+    }
+
+
+    renderProducts();
+
+}
+
+
+/* ==================================================
+   CART
+================================================== */
+
+function saveCart(){
+
+    localStorage.setItem(
+        "trustShopCart",
+        JSON.stringify(cart)
+    );
+
+    updateCartCount();
+
+}
+
+
+function updateCartCount(){
+
+    const count =
+    cart.reduce(
+        (total,item)=>
+        total + Number(item.qty || 0),
+        0
+    );
+
+
+    document
+    .getElementById("cartCount")
+    .textContent =
+    count;
+
+
+    document
+    .getElementById("cartStat")
+    .textContent =
+    count;
+
+}
+
+
+function addToCart(productId){
+
+    const product =
+    products.find(
+        p=>p.id===productId
+    );
+
+
+    if(!product){
+
+        showToast(
+            "Product not found."
+        );
+
+        return;
+
+    }
+
+
+    const stock =
+    Number(product.stock ?? 0);
+
+
+    if(stock<=0){
+
+        showToast(
+            "This product is out of stock."
+        );
+
+        return;
+
+    }
+
+
+    const existing =
+    cart.find(
+        item=>item.id===productId
+    );
+
+
+    if(existing){
+
+        if(existing.qty>=stock){
+
+            showToast(
+                "Maximum available stock reached."
+            );
+
+            return;
+
+        }
+
+        existing.qty++;
+
+    }
+    else{
+
+        cart.push({
+
+            id:productId,
+
+            qty:1
+
+        });
+
+    }
+
+
+    saveCart();
+
+    showToast(
+        "Product added to cart."
+    );
+
+}
+
+
+function openCart(){
+
+    renderCart();
+
+    openModal("cartModal");
+
+}
+
+
+function renderCart(){
+
+    const box =
+    document.getElementById(
+        "cartItems"
+    );
+
+    const footer =
+    document.getElementById(
+        "cartFooter"
+    );
+
+
+    if(cart.length===0){
+
+        box.innerHTML = `
+
+            <div class="empty">
+
+                <h3>
+                    Your cart is empty
+                </h3>
+
+                <p style="margin-top:8px;">
+                    Add products to your cart first.
+                </p>
+
+            </div>
+
+        `;
+
+        footer.innerHTML="";
+
+        return;
+
+    }
+
+
+    let total=0;
+
+
+    box.innerHTML =
+    cart.map(item=>{
+
+        const product =
+        products.find(
+            p=>p.id===item.id
+        );
+
+
+        if(!product){
+            return "";
+        }
+
+
+        const price =
+        Number(product.price || 0);
+
+        const qty =
+        Number(item.qty || 1);
+
+        total +=
+        price * qty;
+
+
+        const image =
+        getFirstImage(product);
+
+
+        return `
+
+            <div class="cart-item">
+
+                <div class="cart-item-image">
+
+                    ${
+                        image
+
+                        ?
+
+                        `<img
+                            src="${safeAttr(image)}"
+                            alt="${safeAttr(product.name || "Product")}">`
+
+                        :
+
+                        `<div class="no-image">
+                            No Image
+                         </div>`
+                    }
+
+                </div>
+
+
+                <div class="cart-item-info">
+
+                    <div class="cart-item-name">
+
+                        ${escapeHTML(product.name || "Product")}
+
+                    </div>
+
+                    <div class="cart-item-price">
+
+                        ৳${money(price)}
+
+                    </div>
+
+
+                    <div class="qty-controls">
+
+                        <button
+                            onclick="changeQty('${product.id}',-1)">
+                            −
+                        </button>
+
+                        <strong>
+                            ${qty}
+                        </strong>
+
+                        <button
+                            onclick="changeQty('${product.id}',1)">
+                            +
+                        </button>
+
+                    </div>
+
+                </div>
+
+
+                <button
+                    class="btn btn-danger"
+                    onclick="removeFromCart('${product.id}')">
+
+                    ×
+
+                </button>
+
+            </div>
+
+        `;
+
+    }).join("");
+
+
+    footer.innerHTML = `
+
+        <div class="cart-total">
+
+            <span>
+                Total
+            </span>
+
+            <span>
+                ৳${money(total)}
+            </span>
+
+        </div>
+
+
+        <button
+            class="btn btn-success"
+            style="width:100%;"
+            onclick="openCheckout()">
+
+            Proceed to Checkout
+
+        </button>
+
+    `;
+
+}
+
+
+function changeQty(productId,change){
+
+    const product =
+    products.find(
+        p=>p.id===productId
+    );
+
+
+    const item =
+    cart.find(
+        x=>x.id===productId
+    );
+
+
+    if(!product || !item){
+        return;
+    }
+
+
+    const stock =
+    Number(product.stock ?? 0);
+
+
+    item.qty += change;
+
+
+    if(item.qty<=0){
+
+        cart =
+        cart.filter(
+            x=>x.id!==productId
+        );
+
+    }
+    else if(item.qty>stock){
+
+        item.qty=stock;
+
+        showToast(
+            "Available stock limit reached."
+        );
+
+    }
+
+
+    saveCart();
+
+    renderCart();
+
+}
+
+
+function removeFromCart(productId){
+
+    cart =
+    cart.filter(
+        x=>x.id!==productId
+    );
+
+
+    saveCart();
+
+    renderCart();
+
+    showToast(
+        "Product removed."
+    );
+
+}
+
+
+/* ==================================================
+   CHECKOUT
+================================================== */
+
+function openCheckout(){
+
+    if(cart.length===0){
+
+        showToast(
+            "Your cart is empty."
+        );
+
+        return;
+
+    }
+
+
+    let total=0;
+
+    let html =
+    `<div style="background:#f9fafb;padding:13px;border-radius:8px;">`;
+
+
+    cart.forEach(item=>{
+
+        const product =
+        products.find(
+            p=>p.id===item.id
+        );
+
+
+        if(!product){
+            return;
+        }
+
+
+        const qty =
+        Number(item.qty || 0);
+
+        const price =
+        Number(product.price || 0);
+
+
+        total +=
+        qty * price;
+
+
+        html += `
+
+            <div
+                style="display:flex;justify-content:space-between;padding:5px 0;gap:10px;">
+
+                <span>
+                    ${escapeHTML(product.name)}
+                    × ${qty}
+                </span>
+
+                <strong>
+                    ৳${money(qty*price)}
+                </strong>
+
+            </div>
+
+        `;
+
+    });
+
+
+    html += `
+
+        <hr style="margin:10px 0;">
+
+        <div
+            style="display:flex;justify-content:space-between;font-size:18px;">
+
+            <strong>
+                Total
+            </strong>
+
+            <strong>
+                ৳${money(total)}
+            </strong>
+
+        </div>
+
+    `;
+
+
+    html += "</div>";
+
+
+    document
+    .getElementById("checkoutSummary")
+    .innerHTML =
+    html;
+
+
+    closeModal("cartModal");
+
+    openModal("checkoutModal");
+
+}
+
+
+/* ==================================================
+   PLACE ORDER
+================================================== */
+
+async function placeOrder(){
+
+    const name =
+    document
+    .getElementById("customerName")
+    .value
+    .trim();
+
+
+    const phone =
+    document
+    .getElementById("customerPhone")
+    .value
+    .trim();
+
+
+    const address =
+    document
+    .getElementById("customerAddress")
+    .value
+    .trim();
+
+
+    const note =
+    document
+    .getElementById("customerNote")
+    .value
+    .trim();
+
+
+    if(!name || !phone || !address){
+
+        showToast(
+            "Name, mobile and address are required."
+        );
+
+        return;
+
+    }
+
+
+    if(cart.length===0){
+
+        showToast(
+            "Your cart is empty."
+        );
+
+        return;
+
+    }
+
+
+    let total=0;
+
+    const items=[];
+
+
+    for(const cartItem of cart){
+
+        const product =
+        products.find(
+            p=>p.id===cartItem.id
+        );
+
+
+        if(!product){
+            continue;
+        }
+
+
+        const qty =
+        Number(cartItem.qty || 0);
+
+        const stock =
+        Number(product.stock ?? 0);
+
+
+        if(qty>stock){
+
+            showToast(
+                `${product.name} has insufficient stock.`
+            );
+
+            return;
+
+        }
+
+
+        const price =
+        Number(product.price || 0);
+
+
+        total +=
+        price * qty;
+
+
+        items.push({
+
+            productId:product.id,
+
+            name:product.name || "",
+
+            price:price,
+
+            qty:qty
+
+        });
+
+    }
+
+
+    try{
+
+        await addDoc(
+            collection(db,"orders"),
+            {
+
+                customerName:name,
+
+                customerPhone:phone,
+
+                customerAddress:address,
+
+                note:note,
+
+                items:items,
+
+                total:total,
+
+                status:"pending",
+
+                createdAt:
+                serverTimestamp()
+
+            }
+        );
+
+
+        let message =
+`*Trust Shop BD - New Order*
+
+Customer: ${name}
+Mobile: ${phone}
+Address: ${address}
+
+*Products:*`;
+
+
+        items.forEach(item=>{
+
+            message +=
+`\n• ${item.name} × ${item.qty} = ৳${item.price * item.qty}`;
+
+        });
+
+
+        message +=
+`\n\n*Total: ৳${total}*`;
+
+
+        if(note){
+
+            message +=
+`\n\nNote: ${note}`;
+
+        }
+
+
+        message +=
+`\n\nPlease confirm my order.`;
+
+
+        const whatsappURL =
+        "https://wa.me/8801580950532?text=" +
+        encodeURIComponent(message);
+
+
+        cart=[];
+
+        saveCart();
+
+
+        document
+        .getElementById("customerName")
+        .value="";
+
+        document
+        .getElementById("customerPhone")
+        .value="";
+
+        document
+        .getElementById("customerAddress")
+        .value="";
+
+        document
+        .getElementById("customerNote")
+        .value="";
+
+
+        closeModal(
+            "checkoutModal"
+        );
+
+
+        showToast(
+            "Order saved. Opening WhatsApp..."
+        );
+
+
+        setTimeout(()=>{
+
+            window.open(
+                whatsappURL,
+                "_blank"
+            );
+
+        },500);
+
+
+    }
+    catch(error){
+
+        console.error(error);
+
+        showToast(
+            "Order save হয়নি। Firestore Rules check করুন."
+        );
+
+    }
+
+}
+
+
+/* ==================================================
+   ADMIN LOGIN
+================================================== */
+
+function openLogin(){
+
+    if(currentUser){
+
+        document
+        .getElementById("adminPanel")
+        .scrollIntoView({
+            behavior:"smooth"
+        });
+
+        return;
+
+    }
+
+
+    openModal(
+        "loginModal"
+    );
+
+}
+
+
+async function loginAdmin(){
+
+    const email =
+    document
+    .getElementById("loginEmail")
+    .value
+    .trim();
+
+
+    const password =
+    document
+    .getElementById("loginPassword")
+    .value;
+
+
+    if(!email || !password){
+
+        showToast(
+            "Email and password দিন."
+        );
+
+        return;
+
+    }
+
+
+    try{
+
+        await signInWithEmailAndPassword(
+            auth,
+            email,
+            password
+        );
+
+
+        showToast(
+            "Login successful."
+        );
+
+    }
+    catch(error){
+
+        console.error(error);
+
+        let message =
+        "Login failed.";
+
+
+        if(
+            error.code ===
+            "auth/invalid-credential"
+        ){
+
+            message =
+            "Email or password ভুল.";
+
+        }
+
+
+        if(
+            error.code ===
+            "auth/user-not-found"
+        ){
+
+            message =
+            "User account পাওয়া যায়নি.";
+
+        }
+
+
+        if(
+            error.code ===
+            "auth/wrong-password"
+        ){
+
+            message =
+            "Password ভুল.";
+
+        }
+
+
+        showToast(message);
+
+    }
+
+}
+
+
+async function logoutAdmin(){
+
+    try{
+
+        await signOut(auth);
+
+        showToast(
+            "Logged out successfully."
+        );
+
+    }
+    catch(error){
+
+        console.error(error);
+
+    }
+
+}
+
+
+/* ==================================================
+   ADMIN PRODUCTS
+================================================== */
+
+async function loadAdminProducts(){
+
+    if(!currentUser){
+        return;
+    }
+
+
+    const box =
+    document.getElementById(
+        "adminProducts"
+    );
+
+
+    box.innerHTML =
+    `<div class="loading">Loading...</div>`;
+
+
+    try{
+
+        const snapshot =
+        await getDocs(
+            collection(db,"products")
+        );
+
+
+        const list=[];
+
+
+        snapshot.forEach(item=>{
+
+            list.push({
+
+                id:item.id,
+
+                ...item.data()
+
+            });
+
+        });
+
+
+        list.sort((a,b)=>{
+
+            const at =
+            a.createdAt?.seconds || 0;
+
+            const bt =
+            b.createdAt?.seconds || 0;
+
+            return bt-at;
+
+        });
+
+
+        if(list.length===0){
+
+            box.innerHTML = `
+
+                <div class="empty">
+
+                    No products added yet.
+
+                </div>
+
+            `;
+
+            return;
+
+        }
+
+
+        box.innerHTML =
+        list.map(product=>{
+
+            const image =
+            getFirstImage(product);
+
+
+            return `
+
+                <div class="admin-product">
+
+                    ${
+                        image
+
+                        ?
+
+                        `
+                        <img
+                            src="${safeAttr(image)}"
+                            alt="${safeAttr(product.name || "Product")}">
+                        `
+
+                        :
+
+                        `
+                        <div
+                            style="height:180px;background:#f3f4f6;border-radius:8px;margin-bottom:10px;"
+                            class="no-image">
+
+                            No Image
+
+                        </div>
+                        `
+                    }
+
+
+                    <strong>
+                        ${escapeHTML(product.name || "Product")}
+                    </strong>
+
+
+                    <div
+                        style="color:#16a34a;font-weight:bold;margin:6px 0;">
+
+                        ৳${money(product.price)}
+
+                    </div>
+
+
+                    <div
+                        style="font-size:13px;color:#6b7280;">
+
+                        ${escapeHTML(product.category || "")}
+                        • Stock:
+                        ${Number(product.stock ?? 0)}
+
+                    </div>
+
+
+                    <div class="admin-buttons">
+
+                        <button
+                            class="btn btn-warning"
+                            onclick="editProduct('${product.id}')">
+
+                            Edit
+
+                        </button>
+
+
+                        <button
+                            class="btn btn-danger"
+                            onclick="deleteProduct('${product.id}')">
+
+                            Delete
+
+                        </button>
+
+                    </div>
+
+                </div>
+
+            `;
+
+        }).join("");
+
+    }
+    catch(error){
+
+        console.error(error);
+
+        box.innerHTML = `
+
+            <div class="empty">
+
+                Could not load admin products.
+
+            </div>
+
+        `;
+
+    }
+
+}
+
+
+/* ==================================================
+   SAVE PRODUCT
+================================================== */
+
+async function saveProduct(){
+
+    if(!currentUser){
+
+        showToast(
+            "Admin login required."
+        );
+
+        return;
+
+    }
+
+
+    const name =
+    document
+    .getElementById("productName")
+    .value
+    .trim();
+
+
+    const category =
+    document
+    .getElementById("productCategory")
+    .value;
+
+
+    const price =
+    Number(
+        document
+        .getElementById("productPrice")
+        .value
+    );
+
+
+    const stock =
+    Number(
+        document
+        .getElementById("productStock")
+        .value
+    );
+
+
+    const description =
+    document
+    .getElementById("productDescription")
+    .value
+    .trim();
+
+
+    const images=[];
+
+
+    for(let i=1;i<=6;i++){
+
+        const url =
+        document
+        .getElementById(
+            "imageUrl"+i
+        )
+        .value
+        .trim();
+
+
+        if(url){
+
+            images.push(url);
+
+        }
+
+    }
+
+
+    if(!name){
+
+        showToast(
+            "Product name দিন."
+        );
+
+        return;
+
+    }
+
+
+    if(!Number.isFinite(price) || price<0){
+
+        showToast(
+            "Valid price দিন."
+        );
+
+        return;
+
+    }
+
+
+    if(!Number.isFinite(stock) || stock<0){
+
+        showToast(
+            "Valid stock দিন."
+        );
+
+        return;
+
+    }
+
+
+    const data={
+
+        name:name,
+
+        category:category,
+
+        price:price,
+
+        stock:stock,
+
+        description:description,
+
+        images:images,
+
+        updatedAt:
         serverTimestamp()
 
     };
 
-    if(editingId){
 
-      await updateDoc(
-        doc(db,"products",editingId),
-        data
-      );
+    try{
 
-      /*
-        Delete old storage files that are no longer used.
-      */
+        if(editingProductId){
 
-      if(editingProduct){
+            await updateDoc(
 
-        const oldPaths =
-          Array.isArray(editingProduct.imagePaths)
-          ? editingProduct.imagePaths
-          : [];
+                doc(
+                    db,
+                    "products",
+                    editingProductId
+                ),
 
-        const newPathSet =
-          new Set(finalPaths);
+                data
 
-        const removedPaths =
-          oldPaths.filter(path=>!newPathSet.has(path));
+            );
 
-        for(const path of removedPaths){
 
-          await deleteStorageFile(path);
+            showToast(
+                "Product updated successfully."
+            );
+
+        }
+        else{
+
+            data.createdAt =
+            serverTimestamp();
+
+
+            await addDoc(
+                collection(db,"products"),
+                data
+            );
+
+
+            showToast(
+                "Product saved successfully."
+            );
 
         }
 
-      }
 
-      showMessage(
-        "adminMessage",
-        "Product updated successfully!",
-        "success"
-      );
+        clearProductForm();
 
-    }else{
+        await loadProducts();
 
-      await addDoc(
-        collection(db,"products"),
-        {
-          ...data,
-          createdAt:serverTimestamp()
-        }
-      );
-
-      showMessage(
-        "adminMessage",
-        "Product saved successfully!",
-        "success"
-      );
+        await loadAdminProducts();
 
     }
+    catch(error){
 
-    resetProductForm();
+        console.error(error);
 
-    await loadProducts();
-
-    await loadAdminProducts();
-
-  }catch(error){
-
-    console.error("SAVE PRODUCT ERROR:",error);
-
-    /*
-      If Firestore failed after upload,
-      remove newly uploaded files.
-    */
-
-    for(const path of uploadedPaths){
-
-      await deleteStorageFile(path);
+        showToast(
+            "Product save হয়নি। Firestore Rules/config check করুন."
+        );
 
     }
-
-    let msg =
-      "Product save failed.";
-
-    if(error.code === "permission-denied"){
-
-      msg =
-        "Permission denied. Firestore/Storage Rules check করুন.";
-
-    }else if(error.message){
-
-      msg += " " + error.message;
-
-    }
-
-    showMessage(
-      "adminMessage",
-      msg,
-      "error"
-    );
-
-  }finally{
-
-    button.disabled=false;
-    button.textContent="💾 Save Product";
-
-    $("uploadProgress").style.display="none";
-
-  }
-
-});
-
-
-/* =========================================================
-   RESET PRODUCT FORM
-========================================================= */
-
-window.resetProductForm = function(){
-
-  $("productForm").reset();
-
-  $("editingId").value="";
-
-  $("formTitle").textContent =
-    "➕ Add Product";
-
-  selectedFiles=[];
-
-  existingImages=[];
-
-  existingImagePaths=[];
-
-  editingProduct=null;
-
-  fileInput.value="";
-
-  $("previewGrid").innerHTML="";
-
-  clearMessage("adminMessage");
-
-};
-
-
-/* =========================================================
-   EDIT PRODUCT
-========================================================= */
-
-window.editProduct = function(id){
-
-  const product =
-    products.find(item=>item.id===id);
-
-  if(!product) return;
-
-  editingProduct = product;
-
-  $("editingId").value=id;
-
-  $("productName").value =
-    product.name || "";
-
-  $("productPrice").value =
-    product.price ?? "";
-
-  $("productCategory").value =
-    product.category || "";
-
-  $("productStock").value =
-    product.stock ?? 0;
-
-  $("productDescription").value =
-    product.description || "";
-
-  selectedFiles=[];
-
-  existingImages =
-    getProductImages(product);
-
-  existingImagePaths =
-    Array.isArray(product.imagePaths)
-    ? [...product.imagePaths]
-    : [];
-
-  /*
-    If old product has image URL but no path,
-    it can still be edited.
-  */
-
-  $("formTitle").textContent =
-    "✏️ Edit Product";
-
-  renderPreviews();
-
-  $("adminModal")
-    .querySelector(".admin-form")
-    .scrollIntoView({behavior:"smooth"});
-
-};
-
-
-/* =========================================================
-   DELETE PRODUCT
-========================================================= */
-
-window.removeProduct = async function(id){
-
-  if(!currentUser){
-
-    alert("Please login.");
-
-    return;
-  }
-
-  const product =
-    products.find(item=>item.id===id);
-
-  if(!product) return;
-
-  const ok =
-    confirm(
-      `Delete "${product.name}"?`
-    );
-
-  if(!ok) return;
-
-  try{
-
-    /*
-      Delete Firestore product first.
-    */
-
-    await deleteDoc(
-      doc(db,"products",id)
-    );
-
-    /*
-      Delete associated Storage images.
-    */
-
-    const paths =
-      Array.isArray(product.imagePaths)
-      ? product.imagePaths
-      : [];
-
-    for(const path of paths){
-
-      await deleteStorageFile(path);
-
-    }
-
-    showMessage(
-      "adminMessage",
-      "Product deleted successfully!",
-      "success"
-    );
-
-    await loadProducts();
-
-    await loadAdminProducts();
-
-  }catch(error){
-
-    console.error(error);
-
-    showMessage(
-      "adminMessage",
-      "Delete failed. Firebase Rules check করুন.",
-      "error"
-    );
-
-  }
-
-};
-
-
-/* =========================================================
-   ADMIN PRODUCT LIST
-========================================================= */
-
-async function loadAdminProducts(){
-
-  if(!currentUser) return;
-
-  $("adminProducts").innerHTML =
-    `<div class="loading">Loading...</div>`;
-
-  try{
-
-    /*
-      Use current products if available.
-    */
-
-    if(!products.length){
-
-      await loadProducts();
-
-    }
-
-    if(!products.length){
-
-      $("adminProducts").innerHTML =
-        `<div class="empty">
-          No products yet.
-        </div>`;
-
-      return;
-    }
-
-    $("adminProducts").innerHTML =
-      products.map(product=>`
-
-        <div class="admin-product">
-
-          <img
-            src="${escapeHtml(getFirstImage(product))}"
-            alt="${escapeHtml(product.name)}"
-          >
-
-          <div class="admin-product-info">
-
-            <b>${escapeHtml(product.name)}</b>
-
-            <div>
-              ${formatPrice(product.price)}
-            </div>
-
-            <small>
-              ${escapeHtml(product.category || "")}
-              • Stock: ${Number(product.stock || 0)}
-            </small>
-
-          </div>
-
-          <div class="admin-product-actions">
-
-            <button
-              class="btn btn-dark"
-              onclick="editProduct('${product.id}')"
-            >
-              Edit
-            </button>
-
-            <button
-              class="btn btn-danger"
-              onclick="removeProduct('${product.id}')"
-            >
-              Delete
-            </button>
-
-          </div>
-
-        </div>
-
-      `).join("");
-
-  }catch(error){
-
-    console.error(error);
-
-    $("adminProducts").innerHTML =
-      `<div class="empty">
-        Unable to load admin products.
-      </div>`;
-
-  }
 
 }
 
 
-/* =========================================================
-   MODAL OUTSIDE CLICK
-========================================================= */
+/* ==================================================
+   EDIT PRODUCT
+================================================== */
 
-document.querySelectorAll(".modal")
-.forEach(modal=>{
+async function editProduct(id){
 
-  modal.addEventListener("click",event=>{
+    let product =
+    products.find(
+        p=>p.id===id
+    );
 
-    if(event.target === modal){
 
-      modal.classList.remove("show");
+    if(!product){
+
+        try{
+
+            const snap =
+            await getDoc(
+                doc(
+                    db,
+                    "products",
+                    id
+                )
+            );
+
+
+            if(!snap.exists()){
+
+                showToast(
+                    "Product not found."
+                );
+
+                return;
+
+            }
+
+
+            product={
+
+                id:snap.id,
+
+                ...snap.data()
+
+            };
+
+        }
+        catch(error){
+
+            console.error(error);
+
+            showToast(
+                "Product load failed."
+            );
+
+            return;
+
+        }
 
     }
 
-  });
 
-});
+    editingProductId =
+    product.id;
 
 
-/* =========================================================
-   INITIALIZE
-========================================================= */
+    document
+    .getElementById(
+        "productFormTitle"
+    )
+    .textContent =
+    "✏️ Edit Product";
 
-loadCart();
+
+    document
+    .getElementById(
+        "productName"
+    )
+    .value =
+    product.name || "";
+
+
+    document
+    .getElementById(
+        "productCategory"
+    )
+    .value =
+    product.category || "Men";
+
+
+    document
+    .getElementById(
+        "productPrice"
+    )
+    .value =
+    product.price ?? "";
+
+
+    document
+    .getElementById(
+        "productStock"
+    )
+    .value =
+    product.stock ?? 0;
+
+
+    document
+    .getElementById(
+        "productDescription"
+    )
+    .value =
+    product.description || "";
+
+
+    const images =
+    getProductImages(product);
+
+
+    for(let i=1;i<=6;i++){
+
+        document
+        .getElementById(
+            "imageUrl"+i
+        )
+        .value =
+        images[i-1] || "";
+
+    }
+
+
+    previewImages();
+
+
+    document
+    .getElementById(
+        "adminPanel"
+    )
+    .scrollIntoView({
+        behavior:"smooth"
+    });
+
+}
+
+
+/* ==================================================
+   DELETE PRODUCT
+================================================== */
+
+async function deleteProduct(id){
+
+    if(!currentUser){
+
+        showToast(
+            "Admin login required."
+        );
+
+        return;
+
+    }
+
+
+    const product =
+    products.find(
+        p=>p.id===id
+    );
+
+
+    const name =
+    product?.name ||
+    "this product";
+
+
+    if(
+        !confirm(
+            `Delete "${name}"?\n\nThis action cannot be undone.`
+        )
+    ){
+
+        return;
+
+    }
+
+
+    try{
+
+        await deleteDoc(
+            doc(
+                db,
+                "products",
+                id
+            )
+        );
+
+
+        cart =
+        cart.filter(
+            item=>item.id!==id
+        );
+
+
+        saveCart();
+
+        clearProductForm();
+
+        showToast(
+            "Product deleted."
+        );
+
+
+        await loadProducts();
+
+        await loadAdminProducts();
+
+    }
+    catch(error){
+
+        console.error(error);
+
+        showToast(
+            "Delete failed. Check Firestore Rules."
+        );
+
+    }
+
+}
+
+
+/* ==================================================
+   CLEAR PRODUCT FORM
+================================================== */
+
+function clearProductForm(){
+
+    editingProductId=null;
+
+
+    document
+    .getElementById(
+        "productFormTitle"
+    )
+    .textContent =
+    "➕ Add New Product";
+
+
+    document
+    .getElementById(
+        "productName"
+    )
+    .value="";
+
+
+    document
+    .getElementById(
+        "productCategory"
+    )
+    .value="Men";
+
+
+    document
+    .getElementById(
+        "productPrice"
+    )
+    .value="";
+
+
+    document
+    .getElementById(
+        "productStock"
+    )
+    .value="10";
+
+
+    document
+    .getElementById(
+        "productDescription"
+    )
+    .value="";
+
+
+    for(let i=1;i<=6;i++){
+
+        document
+        .getElementById(
+            "imageUrl"+i
+        )
+        .value="";
+
+    }
+
+
+    document
+    .getElementById(
+        "imagePreview"
+    )
+    .innerHTML="";
+
+}
+
+
+/* ==================================================
+   IMAGE PREVIEW
+================================================== */
+
+function previewImages(){
+
+    const preview =
+    document.getElementById(
+        "imagePreview"
+    );
+
+
+    const urls=[];
+
+
+    for(let i=1;i<=6;i++){
+
+        const value =
+        document
+        .getElementById(
+            "imageUrl"+i
+        )
+        .value
+        .trim();
+
+
+        if(value){
+
+            urls.push(value);
+
+        }
+
+    }
+
+
+    preview.innerHTML =
+    urls.map(url=>`
+
+        <div class="image-preview-item">
+
+            <img
+                src="${safeAttr(url)}"
+                alt="Preview"
+                onerror="this.style.opacity='.3';">
+
+        </div>
+
+    `).join("");
+
+}
+
+
+for(let i=1;i<=6;i++){
+
+    document
+    .getElementById(
+        "imageUrl"+i
+    )
+    .addEventListener(
+        "input",
+        previewImages
+    );
+
+}
+
+
+/* ==================================================
+   ORDER COUNT
+================================================== */
+
+async function loadOrderCount(){
+
+    if(!currentUser){
+
+        document
+        .getElementById(
+            "orderStat"
+        )
+        .textContent="0";
+
+        return;
+
+    }
+
+
+    try{
+
+        const snapshot =
+        await getDocs(
+            collection(
+                db,
+                "orders"
+            )
+        );
+
+
+        document
+        .getElementById(
+            "orderStat"
+        )
+        .textContent =
+        snapshot.size;
+
+    }
+    catch(error){
+
+        console.error(error);
+
+    }
+
+}
+
+
+/* ==================================================
+   STATS
+================================================== */
+
+function updateStats(){
+
+    document
+    .getElementById(
+        "productStat"
+    )
+    .textContent =
+    products.length;
+
+
+    updateCartCount();
+
+}
+
+
+/* ==================================================
+   MODAL
+================================================== */
+
+function openModal(id){
+
+    const modal =
+    document.getElementById(id);
+
+
+    if(!modal){
+        return;
+    }
+
+
+    modal.classList.add("show");
+
+    document.body.style.overflow="hidden";
+
+}
+
+
+function closeModal(id){
+
+    const modal =
+    document.getElementById(id);
+
+
+    if(modal){
+
+        modal.classList.remove("show");
+
+    }
+
+
+    if(
+        !document.querySelector(
+            ".modal.show"
+        )
+    ){
+
+        document.body.style.overflow="";
+
+    }
+
+}
+
+
+window.addEventListener(
+    "click",
+    event=>{
+
+        if(
+            event.target.classList.contains(
+                "modal"
+            )
+        ){
+
+            event.target.classList.remove(
+                "show"
+            );
+
+            document.body.style.overflow="";
+
+        }
+
+    }
+);
+
+
+/* ==================================================
+   NAVIGATION
+================================================== */
+
+function scrollProducts(){
+
+    document
+    .getElementById(
+        "productsSection"
+    )
+    .scrollIntoView({
+        behavior:"smooth"
+    });
+
+}
+
+
+function goHome(){
+
+    window.scrollTo({
+
+        top:0,
+
+        behavior:"smooth"
+
+    });
+
+}
+
+
+/* ==================================================
+   TOAST
+================================================== */
+
+let toastTimer;
+
+
+function showToast(message){
+
+    const toast =
+    document.getElementById(
+        "toast"
+    );
+
+
+    toast.textContent =
+    message;
+
+
+    toast.classList.add(
+        "show"
+    );
+
+
+    clearTimeout(
+        toastTimer
+    );
+
+
+    toastTimer =
+    setTimeout(()=>{
+
+        toast.classList.remove(
+            "show"
+        );
+
+    },3500);
+
+}
+
+
+/* ==================================================
+   SECURITY / DISPLAY HELPERS
+================================================== */
+
+function escapeHTML(value){
+
+    return String(value ?? "")
+    .replace(/&/g,"&amp;")
+    .replace(/</g,"&lt;")
+    .replace(/>/g,"&gt;")
+    .replace(/"/g,"&quot;")
+    .replace(/'/g,"&#039;");
+
+}
+
+
+function safeAttr(value){
+
+    return escapeHTML(value);
+
+}
+
+
+function money(value){
+
+    const number =
+    Number(value || 0);
+
+    return number.toLocaleString(
+        "en-BD"
+    );
+
+}
+
+
+/* ==================================================
+   GLOBAL FUNCTIONS
+================================================== */
+
+window.goHome =
+goHome;
+
+window.scrollProducts =
+scrollProducts;
+
+window.openCart =
+openCart;
+
+window.openLogin =
+openLogin;
+
+window.closeModal =
+closeModal;
+
+window.selectCategory =
+selectCategory;
+
+window.renderProducts =
+renderProducts;
+
+window.viewProduct =
+viewProduct;
+
+window.changeDetailImage =
+changeDetailImage;
+
+window.addToCart =
+addToCart;
+
+window.changeQty =
+changeQty;
+
+window.removeFromCart =
+removeFromCart;
+
+window.openCheckout =
+openCheckout;
+
+window.placeOrder =
+placeOrder;
+
+window.loginAdmin =
+loginAdmin;
+
+window.logoutAdmin =
+logoutAdmin;
+
+window.saveProduct =
+saveProduct;
+
+window.clearProductForm =
+clearProductForm;
+
+window.editProduct =
+editProduct;
+
+window.deleteProduct =
+deleteProduct;
+
+
+/* ==================================================
+   START
+================================================== */
+
+updateCartCount();
 
 loadProducts();
 
-
-/* =========================================================
-   EXPOSE FUNCTIONS TO HTML onclick
-========================================================= */
-
-window.closeModal = closeModal;
-window.openModal = openModal;
-
-</script>
-
-
-<!-- AdSense -->
-<script>
-  try{
-    (adsbygoogle = window.adsbygoogle || []).push({});
-  }catch(e){
-    console.warn("AdSense:",e);
-  }
 </script>
 
 </body>
